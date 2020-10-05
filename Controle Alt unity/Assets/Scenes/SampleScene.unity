@@ -337,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4720884688345560, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4720884688345560, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -363,77 +363,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
+      propertyPath: pins.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
+        type: 3}
       propertyPath: ManagerState
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
---- !u!1001 &1546549939410890733
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
+      propertyPath: pins.Array.data[0].arduinoName
+      value: uduinoBoard
       objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
+      propertyPath: pins.Array.data[0].currentPin
+      value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
+      propertyPath: pins.Array.data[0].prevPin
+      value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
-        type: 3}
-      propertyPath: m_LocalRotation.w
+      propertyPath: pins.Array.data[0].isEditorPin
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
-      propertyPath: m_RootOrder
+      propertyPath: pins.Array.data[0].sendValue
+      value: 255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
+        type: 3}
+      propertyPath: pins.Array.data[0].prevSendValue
+      value: 255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
+        type: 3}
+      propertyPath: pins.Array.data[0].pinMode
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      propertyPath: pins.Array.data[0].prevPinMode
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4838837831178101239, guid: 9343aa1589518074a8ddaf04ff31a153,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8939224974405865179, guid: 9343aa1589518074a8ddaf04ff31a153,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Teste prefab '
+      propertyPath: shouldReconnect
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9343aa1589518074a8ddaf04ff31a153, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
