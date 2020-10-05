@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 478875098}
   - component: {fileID: 478875099}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Hitbox Haut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 890696315}
   - component: {fileID: 890696316}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: 'HitBox Bas '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
