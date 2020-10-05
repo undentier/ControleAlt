@@ -2,40 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShipMouvement : MonoBehaviour
+/// <summary>
+/// Script fait par Guillaume Rogé et permet de :
+/// - Détécter une Input
+/// - Déplacer le player dans une direction donné
+/// </summary>
+
+namespace PlayerMouvement
 {
-    public float speed;
-
-    private Rigidbody shipRb;
-
-
-    void Start()
+    public class ShipMouvement : MonoBehaviour
     {
-        shipRb = gameObject.GetComponent<Rigidbody>();
-    }
+        #region Variables
+        [Header("Speed player")]
+        public float speed;
 
-    
-    void Update()
-    {
-        if (Input.GetButtonDown("Up"))
+        private Rigidbody shipRb;
+        #endregion
+
+        void Start()
         {
-            shipRb.velocity = speed * Vector3.left * Time.fixedDeltaTime;
+            shipRb = gameObject.GetComponent<Rigidbody>();
         }
 
-        if (Input.GetButtonUp("Up"))
+        void Update()
         {
-            shipRb.velocity = Vector3.zero;
+            Mouvement();
         }
 
 
-        if (Input.GetButtonDown("Down"))
+        void Mouvement()
         {
-            shipRb.velocity = speed * Vector3.right * Time.fixedDeltaTime;
-        }
+            if (Input.GetButtonDown("Up"))
+            {
+                shipRb.velocity = speed * Vector3.up * Time.fixedDeltaTime;
+            }
 
-        if (Input.GetButtonUp("Down"))
-        {
-            shipRb.velocity = Vector3.zero;
+            if (Input.GetButtonUp("Up"))
+            {
+                shipRb.velocity = Vector3.zero;
+            }
+
+
+            if (Input.GetButtonDown("Down"))
+            {
+                shipRb.velocity = speed * Vector3.down * Time.fixedDeltaTime;
+            }
+
+            if (Input.GetButtonUp("Down"))
+            {
+                shipRb.velocity = Vector3.zero;
+            }
         }
     }
 }
