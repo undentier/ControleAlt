@@ -2,36 +2,59 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script fait par Guillaume Rogé et sert à :
+/// - Permet de stock tout les variables lier au wave 
+/// - Detecte le nombre d'ennemis encore en vie
+/// - Gere le lancement des vagues et des spawner
+/// </summary>
+
 namespace Manager
 {
     public class WaveManager : MonoBehaviour
     {
         public static WaveManager Instance;
 
-        public List<GameObject> counter = new List<GameObject>();
+        #region Variables
 
+        [Header ("Nombre d'ennemis à spawn")]
+        public int numberKamikaze;
+        public int numberShoter;
+
+        [Header ("Temps entre chaque spawn d'ennemi")]
+        public float timeBtwSpawn;
+
+        [Header ("Temps entre chaque alerte")]
+        public float timeBtwEmergency;
+
+        [Header ("Chance qu'une alerte arrive")]
+        public float chanceOfEmergency;
+
+        [Header ("Nombre d'ennemi qui spawneront en plus")]
+        public int kamikazeAdd;
+        public int shoterAdd;
+
+        [Header ("Chance qu'une alerte arrive en plus entre chaque vague")]
+        public float EmergencyChanceAdd;
+
+        [Header ("Temps en moins entre chaque vague pour avoir une alerte")]
+        public float EmergencyTimeAdd;
+
+        [Header ("Temps d'attente entre chaque wave")]
+        public float timeBtwWave;
+
+        [Header("Bool pour le systeme")]
         public bool waveActive = false;
         public bool canSpawn = false;
         public bool start;
         public bool canNextWave = false;
 
-        public int numberKamikaze;
-        public int numberShoter;
-
+        [Header ("Numéro de la vague actuel")]
         public int numberOfWave;
 
-        public float timeBtwSpawn;
-
-        public float timeBtwEmergency;
-        public float chanceOfEmergency;
-
-        public int kamikazeAdd;
-        public int shoterAdd;
-
-        public float EmergencyChanceAdd;
-        public float EmergencyTimeAdd;
-
-        public float timeBtwWave;
+        [Header ("Ennemi en vie")]
+        public List<GameObject> counter = new List<GameObject>();
+        #endregion
 
         void Start()
         {
@@ -47,6 +70,18 @@ namespace Manager
 
         void Update()
         {
+            counter.RemoveAll(list_item => list_item == null);
+
+            StartGame();
+
+            EnnemiDetection();
+
+            StartWave();
+        }
+
+
+        void StartGame()
+        {
             if (Input.GetButtonDown("Fire"))
             {
                 if (start == false)
@@ -54,19 +89,10 @@ namespace Manager
                     start = true;
                 }
             }
+        }
 
-            counter.RemoveAll(list_item => list_item == null);
-
-
-            if (start == true)
-            {
-                if (waveActive == false)
-                {
-                    waveActive = true;
-                    StartCoroutine(ActiveWave());
-                }
-            }
-
+        void EnnemiDetection()
+        {
             if (counter.Count == 0)
             {
                 if (start == true)
@@ -82,6 +108,19 @@ namespace Manager
                 }
             }
         }
+
+        void StartWave()
+        {
+            if (start == true)
+            {
+                if (waveActive == false)
+                {
+                    waveActive = true;
+                    StartCoroutine(ActiveWave());
+                }
+            }
+        }
+
 
         IEnumerator ActiveWave()
         {

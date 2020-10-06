@@ -5,25 +5,26 @@ using Manager;
 
 public class Spawner : MonoBehaviour
 {
+    #region Variable
+    [Header ("Glisser les point de spawn")]
     public GameObject[] spawnerPoint;
 
-    public bool canCoroutine = true;
-
+    [Header ("Prefab des ennemis")]
+    public GameObject kamikazeObject;
+    public GameObject shoterObject;
 
     private int kamikaze;
     private int shoter;
 
-
-    public GameObject kamikazeObject;
-    public GameObject shoterObject;
-       
-    void Start()
-    {
-
-    }
-
+    private bool canCoroutine = true;
+    #endregion
 
     void Update()
+    {
+        GestionLancementWave();
+    }
+
+    void GestionLancementWave()
     {
         if (WaveManager.Instance.start == true)
         {
