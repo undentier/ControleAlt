@@ -34,7 +34,7 @@ namespace PlayerMouvement
         {
             if (Input.GetButtonDown("Up"))
             {
-                shipRb.velocity = speed * Vector3.up * Time.fixedDeltaTime;
+                shipRb.velocity = speed * Vector3.forward * Time.fixedDeltaTime;
             }
 
             if (Input.GetButtonUp("Up"))
@@ -45,7 +45,7 @@ namespace PlayerMouvement
 
             if (Input.GetButtonDown("Down"))
             {
-                shipRb.velocity = speed * Vector3.down * Time.fixedDeltaTime;
+                shipRb.velocity = speed * Vector3.back * Time.fixedDeltaTime;
             }
 
             if (Input.GetButtonUp("Down"))

@@ -13,10 +13,4 @@ public class PlayerBullet : MonoBehaviour
 
         bulletRb.AddForce(gameObject.transform.forward * speed);
     }
-
-    
-    void Update()
-    {
-        
-    }
 }
