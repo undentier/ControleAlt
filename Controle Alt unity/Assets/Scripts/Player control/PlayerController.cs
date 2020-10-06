@@ -5,8 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Boundary
 {
-    public float minZ, maxZ;
-    public float minX, maxX;
+    public float minY, maxY;
 }
 
 public class PlayerController : MonoBehaviour
