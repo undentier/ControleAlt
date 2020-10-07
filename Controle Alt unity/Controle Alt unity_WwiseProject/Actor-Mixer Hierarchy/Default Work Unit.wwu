@@ -770,8 +770,8 @@
 											<Modifier Name="" ID="{5D30BEB2-C2A6-46D3-978F-6580ECC04553}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="500"/>
-													<Property Name="Min" Type="Real64" Value="-500"/>
+													<Property Name="Max" Type="Real64" Value="800"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -899,6 +899,476 @@
 									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="ShieldImpact_2" ID="{F7580697-DD03-415E-AEA0-E603BBEB6307}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Laser_Explosion" ID="{B9F44981-90F8-4375-BD01-431723CC498D}" ShortID="514133436">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B182FA50-DE7C-41F5-AFE6-D184F55A8A87}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LaserExplosion_Top" ID="{CCD3E463-C71B-4368-A12D-CBF997E20B63}" ShortID="888017434">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7928D632-375F-4534-8893-EEF4BB125081}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Laser_Explosioon" ID="{0710442B-BEF5-42C6-957B-CC455BC619C0}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.41961451247166"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Laser_Explosioon.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="323728302"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{7EF7EBAE-00B0-462F-9EF0-1EC6C1E9616C}">
+											<ChildrenList>
+												<Path2D Name="LaserExplosion_Top_Path" ID="{E4D8C469-302C-4963-9080-9004164D2A08}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Laser_Explosioon" ID="{0710442B-BEF5-42C6-957B-CC455BC619C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserExplosion_Down" ID="{5B34CADC-7A98-435D-97E6-5050358357D4}" ShortID="908351049">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CF6600DF-E90D-42B4-99C2-BD2A21032034}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Laser_Explosioon" ID="{AE36DF70-7923-44B2-B031-53F7308B83DA}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.41961451247166"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Laser_Explosioon.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="323728302"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{64A9AF48-DB57-48DD-B8D7-7E73A1B41B41}">
+											<ChildrenList>
+												<Path2D Name="LaserExplosion_Down_Path" ID="{7E646E46-791D-4374-927F-0ABA54ED8B90}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>-50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Laser_Explosioon" ID="{AE36DF70-7923-44B2-B031-53F7308B83DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<RandomSequenceContainer Name="MetalImpacts" ID="{1EE0AC23-6D2C-488D-8809-BF71650CC33A}" ShortID="496055238">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C12F345B-9334-4550-ADCE-99C74CA03BF2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MetalImpact_1" ID="{85EFB8DB-DEAE-44C5-8295-A228287032CB}" ShortID="516393653">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalImpact_1" ID="{3EB146EE-8A4E-40EF-8AFD-ACFF4ED4E4BB}">
+											<PropertyList>
+												<Property Name="FadeInShape" Type="int16" Value="0"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.465651059046684"/>
+												<Property Name="FadeOutShape" Type="int16" Value="2"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0278000632266676"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MetalImpact_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="823441210"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalImpact_1" ID="{3EB146EE-8A4E-40EF-8AFD-ACFF4ED4E4BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalImpact_2" ID="{3C44A6A5-2FE2-40FE-9FCC-FAD758AED6DF}" ShortID="468277132">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalImpact_2" ID="{4021EE94-88ED-4904-9FA9-E570C4013DF1}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.578737808376363"/>
+												<Property Name="FadeOutShape" Type="int16" Value="2"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.192023604622572"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MetalImpact_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="647021487"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalImpact_2" ID="{4021EE94-88ED-4904-9FA9-E570C4013DF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalImpact_3" ID="{59A91411-72B3-4313-B9B3-F25EE2D36869}" ShortID="412615775">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalImpact_3" ID="{EC3397BF-6F87-47C7-898F-EB666786A59C}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.60935469770237"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.13211922520012"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MetalImpact_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="649553942"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalImpact_3" ID="{EC3397BF-6F87-47C7-898F-EB666786A59C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalImpact_4" ID="{0C92192A-2167-45DA-ADFA-646EFC1555D2}" ShortID="873949317">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalImpact_4" ID="{413B4FF1-712A-4ED1-B56E-00F12C4E1C6D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.282037303733886"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.03435069724964"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MetalImpact_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="920751085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalImpact_4" ID="{413B4FF1-712A-4ED1-B56E-00F12C4E1C6D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalImpact_5" ID="{A64D25CA-8529-4AD0-BC23-70532C2C7A18}" ShortID="982539351">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalImpact_5" ID="{64AF0397-4C5C-422D-B656-B5A2E8668111}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.520962372327015"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0152583121602055"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MetalImpact_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="103145957"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalImpact_5" ID="{64AF0397-4C5C-422D-B656-B5A2E8668111}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<ActorMixer Name="Kamikaz_Explosion" ID="{3B5026CD-FD61-4943-99AE-AEC63D11CDB0}" ShortID="649407892">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2E708335-BC2E-48F5-AFE0-6F9C740D53D0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="KamikazExplosion_Up" ID="{79598174-FB6C-4B79-80CF-74DCBAAA1883}" ShortID="896667129">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{969DD031-5624-47C9-A055-B77FF8868156}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kamikaz_Explosion" ID="{11599716-DEFF-4DFB-B69D-9329DC983A25}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.27101385132366"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.479715323880556"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.75072917520422"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Kamikaz_Explosion.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="183959692"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{4EDBAAD5-4066-4EF4-AFCB-EB495DB3362C}">
+											<ChildrenList>
+												<Path2D Name="KamikazExplosion_Up_Path" ID="{066D03A9-1387-4188-B910-12B8E5EC2BF7}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Kamikaz_Explosion" ID="{11599716-DEFF-4DFB-B69D-9329DC983A25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="KamikazExplosion_Down" ID="{36EB43A8-B8D1-4043-81FC-5C807FB1BB62}" ShortID="16551672">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kamikaz_Explosion" ID="{6E313439-B7A1-488F-B4D3-5EF10ED7DFB5}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.27101385132366"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.479715323880556"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.75072917520422"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Kamikaz_Explosion.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="183959692"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{F1FE50FA-BCA6-41C4-AB3A-65CE191A80B7}">
+											<ChildrenList>
+												<Path2D Name="KamikazExplosion_Up_Path" ID="{8DFA2843-71D4-45F7-BAA3-7037BF1D1C71}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>-50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Kamikaz_Explosion" ID="{6E313439-B7A1-488F-B4D3-5EF10ED7DFB5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
