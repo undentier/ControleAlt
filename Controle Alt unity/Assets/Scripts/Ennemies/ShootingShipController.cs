@@ -33,7 +33,6 @@ public class ShootingShipController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         timeBtwShots = startTimeBtwShots;
-      
     }
 
     private void Update()

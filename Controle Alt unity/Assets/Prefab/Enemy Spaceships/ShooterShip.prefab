@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 924695894745405219}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 11.64, y: 2.6783, z: 0.34}
-  m_LocalScale: {x: 0.085873, y: 0.085873, z: 0.085873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4320708043659510519}
   m_Father: {fileID: 0}
@@ -113,11 +113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPoint: {fileID: 4320708043659510519}
   bullet: {fileID: 8112698618134081653, guid: cdfe0b0e8a948cb41b14ef90e47726f6, type: 3}
-  stopDis: 7
-  shooterRadar: 9
-  shooterRange: 10
-  shooterSpeed: 5
-  retreatDis: 4
+  stopDis: 70
+  shooterRadar: 90
+  shooterRange: 100
+  shooterSpeed: 50
+  retreatDis: 40
   startTimeBtwShots: 3
 --- !u!65 &4006585110535899736
 BoxCollider:

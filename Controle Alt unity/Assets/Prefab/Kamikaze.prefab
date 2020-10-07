@@ -108,4 +108,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReferenceTurret: {fileID: 0}
-  MoveSpeed: 10
+  MoveSpeed: 40
