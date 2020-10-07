@@ -27,6 +27,7 @@ public class ShootingShipController : MonoBehaviour
     float timeBtwShots;
     public float startTimeBtwShots;
 
+    Vector3 direction;
 
     private void Start()
     {
@@ -70,6 +71,8 @@ public class ShootingShipController : MonoBehaviour
 
 
         //rotate le ship par rapport au transform du joueur
+        direction = target.transform.position - transform.position;
+        transform.rotation = Quaternion.LookRotation(direction);
 
     }
 
