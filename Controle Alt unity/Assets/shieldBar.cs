@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ManagerPlayer;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,28 +9,27 @@ public class shieldBar : MonoBehaviour
     public Slider ShieldBar;
     public string input;
     public string input2;
-    public int MaxShield;
-    public int Shield;
+    
     // Start is called before the first frame update
     void Start()
     {
-        ShieldBar.maxValue = MaxShield;
-        Shield = MaxShield;
+        ShieldBar.maxValue = PlayerManager.Instance.maxShield;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        ShieldBar.value = Shield;
+        ShieldBar.value = PlayerManager.Instance.shield;
         
-        if (Input.GetKeyUp(input) && Shield > 0)
+        if (Input.GetKeyUp(input) && PlayerManager.Instance.shield > 0)
         {
-            Shield -= 1;
+            PlayerManager.Instance.shield -= 1;
             //StartCoroutine(CheckCD(Shield));
         }
-        if (Input.GetKeyUp(input2) && Shield < MaxShield)
+        if (Input.GetKeyUp(input2) && PlayerManager.Instance.shield < PlayerManager.Instance.maxShield)
         {
-            Shield += 1;
+            PlayerManager.Instance.shield += 1;
         }
     }
 

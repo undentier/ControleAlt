@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Asteroid
   - Kamikaze
+  - Bullet
   layers:
   - Default
   - TransparentFX
