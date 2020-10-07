@@ -10,11 +10,15 @@ namespace ManagerPlayer
 
         public GameObject[] turret;
 
-        public int Hp;
+        public int hp;
+        public int maxHp;
+        public int shield;
+        public int maxShield;
 
 
         void Start()
         {
+            hp = maxHp;
             if (Instance == null)
             {
                 Instance = this;
