@@ -19,6 +19,8 @@ public class AsteroidManager : MonoBehaviour
     [Header("Stats")]
     public float timer = 2f; //le fameux timer pour varier les spawns, il peut être modulable pour augmenter la difficulté mais vu qu'on part sur un système de vague jsp pourquoi j'écris ça
 
+    
+
     private void Start()
     {
         Invoke("Spawner", timer);
