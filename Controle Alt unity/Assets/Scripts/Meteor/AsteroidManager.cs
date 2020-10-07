@@ -39,7 +39,7 @@ public class AsteroidManager : MonoBehaviour
         }
         else
         {
-            //Instantiate(shooter, temp, Quaternion.Euler(0f, -90f, 0f));
+            Instantiate(shooter, temp, Quaternion.Euler(0f, -90f, 0f));
         }
 
         Invoke("Spawner", timer);
