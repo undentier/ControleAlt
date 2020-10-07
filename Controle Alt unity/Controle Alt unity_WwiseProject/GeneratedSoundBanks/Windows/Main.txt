@@ -5,29 +5,30 @@ Event	ID	Name			Wwise Object Path	Notes
 	1182029954	TurretMovement_UpRight			\Default Work Unit\SpaceShip_Ext\TurretMovement_UpRight	
 	1604459401	LaserShoot_UpRight			\Default Work Unit\SpaceShip_Ext\LaserShoot_UpRight	
 	1850191103	TurretMovement_UpLeft			\Default Work Unit\SpaceShip_Ext\TurretMovement_UpLeft	
-	2298054145	ShieldExplosionImpact			\Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact	
 	2338192817	SpaceShipe_ExplosionDamages_Down			\Default Work Unit\SpaceShip_Ext\SpaceShipe_ExplosionDamages_Down	
 	2454832008	Spaceship_Damages_Top			\Default Work Unit\SpaceShip_Ext\Spaceship_Damages_Top	
 	2822200171	ShieldImpact_Down			\Default Work Unit\SpaceShip_Ext\ShieldImpact_Down	
 	2836862680	LaserShoot_DownRight			\Default Work Unit\SpaceShip_Ext\LaserShoot_DownRight	
 	2862969430	Engine_Start			\Default Work Unit\SpaceShip_Ext\Engine_Start	
 	3256852338	LaserShoot_UpLeft			\Default Work Unit\SpaceShip_Ext\LaserShoot_UpLeft	
+	3762322931	ShieldExplosionImpact_Up			\Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact_Up	
 	3840785261	LaserShoot_DownLeft			\Default Work Unit\SpaceShip_Ext\LaserShoot_DownLeft	
 	3859047051	TurretMovement_DownRight			\Default Work Unit\SpaceShip_Ext\TurretMovement_DownRight	
 	3991162352	ShieldImpact_Top			\Default Work Unit\SpaceShip_Ext\ShieldImpact_Top	
+	4241304272	ShieldExplosionImpact_Down			\Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact_Down	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4929685	ShieldImpact_Ondulation	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\ShieldImpact_1_9A8995E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\ShieldImpact_Ondulation		125852
 	33727131	Engine_Idle	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\Engine_Idle_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Engine_Idle		5310620
-	103145957	MetalImpact_5	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_5_9C1AB426.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_5		220772
-	183959692	KamikazExplosion_Up	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\Kamikaz_Explosion_6D9D6569.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Kamikaz_Explosion\KamikazExplosion_Up		753472
+	103145957	MetalImpact_5	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_5_D2DD69B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_5		220772
+	183959692	KamikazExplosion_Down	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\Kamikaz_Explosion_B96EB4F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Kamikaz_Explosion\KamikazExplosion_Down		753472
 	255269213	Engine_Boost	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\Engine_Boost_2E04F6A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Engine_Boost		952124
-	323728302	LaserExplosion_Down	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\Laser_Explosioon_15B0587F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Laser_Explosion\LaserExplosion_Down		250484
-	647021487	MetalImpact_2	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_2_81245E46.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_2		239528
+	323728302	LaserExplosion_Top	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\Laser_Explosioon_ED9D90D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Laser_Explosion\LaserExplosion_Top		250484
+	647021487	MetalImpact_2	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_2_8E1A97BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_2		239528
 	746217442	Engine_Starting	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\Engine_Starting_77B68C84.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Engine_Starting		4112188
-	823441210	MetalImpact_1	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_1_BD9B4756.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_1		232592
-	920751085	MetalImpact_4	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_4_92EAFEA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_4		179296
+	823441210	MetalImpact_1	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_1_0B30A67C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_1		232592
+	920751085	MetalImpact_4	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MetalImpact_4_4A3B2729.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\MetalImpacts\MetalImpact_4		179296
 	943769309	MecanicalMovement_DownLeft	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\MecanicalMovement_9B9A509B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Mecanical_Movement\MecanicalMovement_DownLeft		479464
-	1067481878	LaserShot_UpRight	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\LaserShot_2_CBEF74DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Laser_Shots\LaserShot_UpRight		111292
+	1067481878	LaserShot_UpLeft	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\LaserShot_2_CBEF74DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Laser_Shots\LaserShot_UpLeft		111292
 	1068871882	ShieldImpact_Down	C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\SFX\ShieldImpact_2_01B11281.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceShip_Ext\Shield_Impacts\ShieldImpact_Down		245456
 
