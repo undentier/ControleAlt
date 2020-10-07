@@ -24,9 +24,14 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
     public Boundary boundary;
 
+    EventFeedBack eventFB;
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+       
     }
 
     private void Update()
