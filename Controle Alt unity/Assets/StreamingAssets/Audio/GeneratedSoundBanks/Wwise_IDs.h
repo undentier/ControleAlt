@@ -18,7 +18,8 @@ namespace AK
         static const AkUniqueID LASERSHOOT_DOWNRIGHT = 2836862680U;
         static const AkUniqueID LASERSHOOT_UPLEFT = 3256852338U;
         static const AkUniqueID LASERSHOOT_UPRIGHT = 1604459401U;
-        static const AkUniqueID SHIELDEXPLOSIONIMPACT = 2298054145U;
+        static const AkUniqueID SHIELDEXPLOSIONIMPACT_DOWN = 4241304272U;
+        static const AkUniqueID SHIELDEXPLOSIONIMPACT_UP = 3762322931U;
         static const AkUniqueID SHIELDIMPACT_DOWN = 2822200171U;
         static const AkUniqueID SHIELDIMPACT_TOP = 3991162352U;
         static const AkUniqueID SPACESHIP_DAMAGES_DOWN = 411634723U;

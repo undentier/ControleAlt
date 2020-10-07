@@ -176,6 +176,7 @@ MonoBehaviour:
   Bar: {fileID: 0}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
 --- !u!114 &1339626298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +192,17 @@ MonoBehaviour:
   Bar: {fileID: 0}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96ae4a2f01ea034479d46de86f6ec4e6,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a54099dcbd103d64eacb93b4b6b9a030,
+      type: 2}
 --- !u!114 &2038428958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +218,17 @@ MonoBehaviour:
   Bar: {fileID: 0}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96ae4a2f01ea034479d46de86f6ec4e6,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a54099dcbd103d64eacb93b4b6b9a030,
+      type: 2}
 --- !u!114 &1386773499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +244,17 @@ MonoBehaviour:
   Bar: {fileID: 0}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa0ffb66276e6a64daab82d7f5947254,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 88dda2b61c0efcb4395c2b8955f096df,
+      type: 2}
 --- !u!114 &295555216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +270,17 @@ MonoBehaviour:
   Bar: {fileID: 0}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa0ffb66276e6a64daab82d7f5947254,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 88dda2b61c0efcb4395c2b8955f096df,
+      type: 2}
 --- !u!1 &8485983807892754203
 GameObject:
   m_ObjectHideFlags: 0

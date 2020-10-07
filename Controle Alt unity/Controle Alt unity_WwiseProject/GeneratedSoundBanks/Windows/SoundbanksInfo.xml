@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1537599630">
+		<SoundBank Id="3161908922" Language="SFX" Hash="511776185">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -69,11 +69,23 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2298054145" Name="ShieldExplosionImpact" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact" DurationType="OneShot" DurationMin="3.591480" DurationMax="5.079120">
+				<Event Id="4241304272" Name="ShieldExplosionImpact_Down" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact_Down" DurationType="OneShot" DurationMin="3.591480" DurationMax="5.079120">
 					<IncludedMemoryFiles>
 						<File Id="183959692" Language="SFX">
 							<ShortName>Kamikaz_Explosion.wav</ShortName>
-							<Path>SFX\Kamikaz_Explosion_6D9D6569.wem</Path>
+							<Path>SFX\Kamikaz_Explosion_B96EB4F4.wem</Path>
+						</File>
+						<File Id="1068871882" Language="SFX">
+							<ShortName>ShieldImpact_2.wav</ShortName>
+							<Path>SFX\ShieldImpact_2_01B11281.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3762322931" Name="ShieldExplosionImpact_Up" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact_Up" DurationType="OneShot" DurationMin="3.591480" DurationMax="5.079120">
+					<IncludedMemoryFiles>
+						<File Id="183959692" Language="SFX">
+							<ShortName>Kamikaz_Explosion.wav</ShortName>
+							<Path>SFX\Kamikaz_Explosion_B96EB4F4.wem</Path>
 						</File>
 						<File Id="1068871882" Language="SFX">
 							<ShortName>ShieldImpact_2.wav</ShortName>
@@ -109,23 +121,23 @@
 					<IncludedMemoryFiles>
 						<File Id="103145957" Language="SFX">
 							<ShortName>MetalImpact_5.wav</ShortName>
-							<Path>SFX\MetalImpact_5_9C1AB426.wem</Path>
+							<Path>SFX\MetalImpact_5_D2DD69B9.wem</Path>
 						</File>
 						<File Id="323728302" Language="SFX">
 							<ShortName>Laser_Explosioon.wav</ShortName>
-							<Path>SFX\Laser_Explosioon_15B0587F.wem</Path>
+							<Path>SFX\Laser_Explosioon_ED9D90D6.wem</Path>
 						</File>
 						<File Id="647021487" Language="SFX">
 							<ShortName>MetalImpact_2.wav</ShortName>
-							<Path>SFX\MetalImpact_2_81245E46.wem</Path>
+							<Path>SFX\MetalImpact_2_8E1A97BE.wem</Path>
 						</File>
 						<File Id="823441210" Language="SFX">
 							<ShortName>MetalImpact_1.wav</ShortName>
-							<Path>SFX\MetalImpact_1_BD9B4756.wem</Path>
+							<Path>SFX\MetalImpact_1_0B30A67C.wem</Path>
 						</File>
 						<File Id="920751085" Language="SFX">
 							<ShortName>MetalImpact_4.wav</ShortName>
-							<Path>SFX\MetalImpact_4_92EAFEA8.wem</Path>
+							<Path>SFX\MetalImpact_4_4A3B2729.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -133,23 +145,23 @@
 					<IncludedMemoryFiles>
 						<File Id="103145957" Language="SFX">
 							<ShortName>MetalImpact_5.wav</ShortName>
-							<Path>SFX\MetalImpact_5_9C1AB426.wem</Path>
+							<Path>SFX\MetalImpact_5_D2DD69B9.wem</Path>
 						</File>
 						<File Id="323728302" Language="SFX">
 							<ShortName>Laser_Explosioon.wav</ShortName>
-							<Path>SFX\Laser_Explosioon_15B0587F.wem</Path>
+							<Path>SFX\Laser_Explosioon_ED9D90D6.wem</Path>
 						</File>
 						<File Id="647021487" Language="SFX">
 							<ShortName>MetalImpact_2.wav</ShortName>
-							<Path>SFX\MetalImpact_2_81245E46.wem</Path>
+							<Path>SFX\MetalImpact_2_8E1A97BE.wem</Path>
 						</File>
 						<File Id="823441210" Language="SFX">
 							<ShortName>MetalImpact_1.wav</ShortName>
-							<Path>SFX\MetalImpact_1_BD9B4756.wem</Path>
+							<Path>SFX\MetalImpact_1_0B30A67C.wem</Path>
 						</File>
 						<File Id="920751085" Language="SFX">
 							<ShortName>MetalImpact_4.wav</ShortName>
-							<Path>SFX\MetalImpact_4_92EAFEA8.wem</Path>
+							<Path>SFX\MetalImpact_4_4A3B2729.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -157,23 +169,23 @@
 					<IncludedMemoryFiles>
 						<File Id="103145957" Language="SFX">
 							<ShortName>MetalImpact_5.wav</ShortName>
-							<Path>SFX\MetalImpact_5_9C1AB426.wem</Path>
+							<Path>SFX\MetalImpact_5_D2DD69B9.wem</Path>
 						</File>
 						<File Id="183959692" Language="SFX">
 							<ShortName>Kamikaz_Explosion.wav</ShortName>
-							<Path>SFX\Kamikaz_Explosion_6D9D6569.wem</Path>
+							<Path>SFX\Kamikaz_Explosion_B96EB4F4.wem</Path>
 						</File>
 						<File Id="647021487" Language="SFX">
 							<ShortName>MetalImpact_2.wav</ShortName>
-							<Path>SFX\MetalImpact_2_81245E46.wem</Path>
+							<Path>SFX\MetalImpact_2_8E1A97BE.wem</Path>
 						</File>
 						<File Id="823441210" Language="SFX">
 							<ShortName>MetalImpact_1.wav</ShortName>
-							<Path>SFX\MetalImpact_1_BD9B4756.wem</Path>
+							<Path>SFX\MetalImpact_1_0B30A67C.wem</Path>
 						</File>
 						<File Id="920751085" Language="SFX">
 							<ShortName>MetalImpact_4.wav</ShortName>
-							<Path>SFX\MetalImpact_4_92EAFEA8.wem</Path>
+							<Path>SFX\MetalImpact_4_4A3B2729.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -181,23 +193,23 @@
 					<IncludedMemoryFiles>
 						<File Id="103145957" Language="SFX">
 							<ShortName>MetalImpact_5.wav</ShortName>
-							<Path>SFX\MetalImpact_5_9C1AB426.wem</Path>
+							<Path>SFX\MetalImpact_5_D2DD69B9.wem</Path>
 						</File>
 						<File Id="183959692" Language="SFX">
 							<ShortName>Kamikaz_Explosion.wav</ShortName>
-							<Path>SFX\Kamikaz_Explosion_6D9D6569.wem</Path>
+							<Path>SFX\Kamikaz_Explosion_B96EB4F4.wem</Path>
 						</File>
 						<File Id="647021487" Language="SFX">
 							<ShortName>MetalImpact_2.wav</ShortName>
-							<Path>SFX\MetalImpact_2_81245E46.wem</Path>
+							<Path>SFX\MetalImpact_2_8E1A97BE.wem</Path>
 						</File>
 						<File Id="823441210" Language="SFX">
 							<ShortName>MetalImpact_1.wav</ShortName>
-							<Path>SFX\MetalImpact_1_BD9B4756.wem</Path>
+							<Path>SFX\MetalImpact_1_0B30A67C.wem</Path>
 						</File>
 						<File Id="920751085" Language="SFX">
 							<ShortName>MetalImpact_4.wav</ShortName>
-							<Path>SFX\MetalImpact_4_92EAFEA8.wem</Path>
+							<Path>SFX\MetalImpact_4_4A3B2729.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
