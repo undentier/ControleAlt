@@ -158,6 +158,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1251918485771260, guid: 41a827e1c8551f143a8856c9331983b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4921508814669472, guid: 41a827e1c8551f143a8856c9331983b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -412,12 +416,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1023374385 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4423406923144938192, guid: 78c5b9d82a5c3e14480ae1e19de830bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 4423406923855275638}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1486784911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4199086728973099169, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
@@ -449,9 +447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bar: {fileID: 1023374385}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
 --- !u!1 &1518547721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2084721599662110209, guid: 9020427ab5064064bb353006e67d2f05,
@@ -566,6 +564,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1739606680
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1231200588310997448, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_Name
+      value: Player Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997449, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997449, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: maxHp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997449, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: shield
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997449, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: maxShield
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231200588310997450, guid: 1c20642e0083b1e46b592d221084d2b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c20642e0083b1e46b592d221084d2b9, type: 3}
 --- !u!1 &1800465492 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4199086728307055567, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
@@ -597,9 +684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bar: {fileID: 1023374385}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
 --- !u!1 &1804868764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4199086728616412903, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
@@ -631,9 +718,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bar: {fileID: 1023374385}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
 --- !u!1 &1948719517 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1251918485771260, guid: 41a827e1c8551f143a8856c9331983b7,
@@ -652,9 +739,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eafbcb16d20cad748abaefe6620f8228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bar: {fileID: 1023374385}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
 --- !u!1 &2005614011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4199086727451836611, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
@@ -686,9 +773,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bar: {fileID: 1023374385}
   AsteroidDmg: 1
   KamikazeDmg: 2
+  bulletDamage: 0
 --- !u!1 &2078713744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,6 +1119,14 @@ PrefabInstance:
     - target: {fileID: 1282096028, guid: 78c5b9d82a5c3e14480ae1e19de830bc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655315902, guid: 78c5b9d82a5c3e14480ae1e19de830bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11.300018
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655315902, guid: 78c5b9d82a5c3e14480ae1e19de830bc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.099975586
       objectReference: {fileID: 0}
     - target: {fileID: 4423406923144938192, guid: 78c5b9d82a5c3e14480ae1e19de830bc,
         type: 3}
