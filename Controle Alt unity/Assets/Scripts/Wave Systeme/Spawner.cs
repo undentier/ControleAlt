@@ -6,8 +6,11 @@ using Manager;
 public class Spawner : MonoBehaviour
 {
     #region Variable
-    [Header ("Glisser les point de spawn")]
-    public GameObject[] spawnerPoint;
+    [Header ("SpawnPoint des kamikazes")]
+    public GameObject[] kamikazeSpawnerPoint;
+
+    [Header ("SpawnPoint des shooters")]
+    public GameObject[] shooterSpawnPoint;
 
     [Header ("Prefab des ennemis")]
     public GameObject kamikazeObject;
@@ -17,11 +20,33 @@ public class Spawner : MonoBehaviour
     private int shoter;
 
     private bool canCoroutine = true;
+
+    private bool kamikazeFinish;
+    private bool shooterFinish;
     #endregion
 
     void Update()
     {
         GestionLancementWave();
+
+        EndOfWave();
+    }
+
+    void EndOfWave()
+    {
+        if (shooterFinish == true)
+        {
+            if (kamikazeFinish == true)
+            {
+                shooterFinish = false;
+                kamikazeFinish = false;
+
+                WaveManager.Instance.canSpawn = false;
+                WaveManager.Instance.canNextWave = true;
+
+                canCoroutine = true;
+            }
+        }
     }
 
     void GestionLancementWave()
@@ -37,28 +62,44 @@ public class Spawner : MonoBehaviour
                     kamikaze = WaveManager.Instance.numberKamikaze;
                     shoter = WaveManager.Instance.numberShoter;
 
-                    StartCoroutine(SpawnerSysteme());
+                    StartCoroutine(SpawnerKamikaze());
+
+                    StartCoroutine(SpawnerShooter());
                 }
             }
         }
     }
 
-    IEnumerator SpawnerSysteme()
-    {
-        for (int i = 0; i < (kamikaze+shoter) ; i++)
-        {
-            int wichPoint = Random.Range(0, spawnerPoint.Length);
 
-            GameObject ship = Instantiate(kamikazeObject, spawnerPoint[wichPoint].transform.position, transform.rotation);
-            WaveManager.Instance.counter.Add(ship);
+    IEnumerator SpawnerKamikaze()
+    {
+        for (int i = 0; i < kamikaze ; i++)
+        {
+            int wichPointK = Random.Range(0, kamikazeSpawnerPoint.Length);
+
+            GameObject kamikazeShip = Instantiate(kamikazeObject, kamikazeSpawnerPoint[wichPointK].transform.position, transform.rotation);
+            WaveManager.Instance.counter.Add(kamikazeShip);
 
             yield return new WaitForSeconds(WaveManager.Instance.timeBtwSpawn);
         }
 
-        canCoroutine = true;
+        kamikazeFinish = true;
+    }
 
-        WaveManager.Instance.canSpawn = false;
-        WaveManager.Instance.canNextWave = true;
+    IEnumerator SpawnerShooter()
+    {
+        for (int i = 0; i < shoter; i++)
+        {
+            int wichPointS = Random.Range(0, shooterSpawnPoint.Length);
+
+            GameObject shooterShip = Instantiate(shoterObject, shooterSpawnPoint[wichPointS].transform.position, transform.rotation);
+            WaveManager.Instance.counter.Add(shooterShip);
+
+            yield return new WaitForSeconds(WaveManager.Instance.timeBtwSpawn);
+        }
+
+        shooterFinish = true;
+
     }
 
 }

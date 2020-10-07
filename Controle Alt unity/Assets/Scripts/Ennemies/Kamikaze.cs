@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ManagerPlayer;
 /// <summary>
 /// Deutschmann Lucas 
 /// 
@@ -17,9 +18,22 @@ namespace Ennemis
         
         
 
+        private float nearDistance = 10000000f;
+
         private void Start()
         {
-            // ReferenceTurret = Gamemanager.instance. blablabbla ...
+            for (int i = 0; i < PlayerManager.Instance.turret.Length; i++)
+            {
+                float distance = Vector3.Distance(transform.position, PlayerManager.Instance.turret[i].transform.position);
+                
+                if (distance < nearDistance)
+                {
+                    nearDistance = distance;
+                    ReferenceTurret = PlayerManager.Instance.turret[i];
+                }
+            }
+
+            //ReferenceTurret = GameObject.FindGameObjectWithTag("Player");
         }
 
         void Update()
