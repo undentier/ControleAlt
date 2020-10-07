@@ -21,7 +21,9 @@ public class TakeDamage : MonoBehaviour
         if (other.tag == "Kamikaze")
         {
             Bar.GetComponent<HPBar>().HP -= KamikazeDmg;
-           
+            
+
+
             Destroy(other.gameObject);
         }
     }

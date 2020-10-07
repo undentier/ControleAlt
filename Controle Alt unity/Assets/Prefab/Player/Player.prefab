@@ -176,6 +176,66 @@ MonoBehaviour:
   Bar: {fileID: 0}
   AsteroidDmg: 1
   KamikazeDmg: 2
+--- !u!114 &1339626298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199086728095300616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 0}
+  AsteroidDmg: 1
+  KamikazeDmg: 2
+--- !u!114 &2038428958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199086728418417230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 0}
+  AsteroidDmg: 1
+  KamikazeDmg: 2
+--- !u!114 &1386773499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199086728828215584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 0}
+  AsteroidDmg: 1
+  KamikazeDmg: 2
+--- !u!114 &295555216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199086729078209068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bar: {fileID: 0}
+  AsteroidDmg: 1
+  KamikazeDmg: 2
 --- !u!1 &8485983807892754203
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,11 +651,55 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4224780194769314549, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224780195590781433, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224780196255340955, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224780196569759709, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac, type: 3}
 --- !u!4 &4198112296866048884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4198112297387168155, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1628469999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4199086728418417230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4199086728973099169, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1628469999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4199086728095300616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4199086728616412903, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1628469999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4199086728828215584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4199086728307055567, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1628469999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4199086729078209068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4199086727451836611, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
     type: 3}
   m_PrefabInstance: {fileID: 1628469999}
   m_PrefabAsset: {fileID: 0}
