@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2A3EB48D-3CD5-45A4-B065-841A3C2C21DE}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{2A3EB48D-3CD5-45A4-B065-841A3C2C21DE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2A3EB48D-3CD5-45A4-B065-841A3C2C21DE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="SpaceShip" ID="{9F19266E-D812-4DC0-BD52-A2839C798102}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Engine_Idle" ID="{8E770B2B-88A5-4FCC-9CDB-EE0A99252A53}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Engine_Starting" ID="{FAE9F75C-BB64-4565-8C18-CADB02A54E85}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Engine_Boost" ID="{AB1F0F72-9DF4-4EF7-8AFA-52A0D16EEC70}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

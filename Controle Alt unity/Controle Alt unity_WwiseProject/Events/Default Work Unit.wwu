@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Musics" ID="{08162D97-63E2-4F35-B74A-95D16D06E604}" ShortID="145403560">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="Ambients" ID="{4E2EEDCD-1E5F-408D-A473-AFE3110E83D3}" ShortID="1060379109">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="SpaceShip_Int" ID="{751EBDEE-C4B7-4C25-B605-C1D37131F057}" ShortID="1067466607">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="SpaceShip_Ext" ID="{5FC32C63-3AAA-4DE2-9A66-BF4A6C3EAF9A}" ShortID="221301100">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Engine_Start" ID="{06342745-2908-4424-A2DA-6B7ADF524F2A}">
+							<ChildrenList>
+								<Action Name="" ID="{87D8F3FD-57CB-4CFF-B61E-4E5374D6EFB9}" ShortID="775644084">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Engine_Starting" ID="{FAE9F75C-BB64-4565-8C18-CADB02A54E85}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A750251B-A19E-4095-9FF3-842EC54611EA}" ShortID="919684600">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="18"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Engine_Idle" ID="{8E770B2B-88A5-4FCC-9CDB-EE0A99252A53}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{28B4F83B-7D49-4979-9715-1AEEE9106A1B}" ShortID="569199635">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="17"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Engine_Boost" ID="{AB1F0F72-9DF4-4EF7-8AFA-52A0D16EEC70}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Shield_Impact" ID="{8D64999B-F8B5-46CF-8BA5-F1EE98F3306A}">
+							<ChildrenList>
+								<Action Name="" ID="{F6A3141F-37B8-4921-B6D0-ED1CE1ADA95C}" ShortID="899119776">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShieldImpact_Ondulation" ID="{5ADBA9BA-67D3-4C98-850A-E0C78E70A6EB}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9D9E4E82-0105-4EEF-AF84-45AE691236A5}" ShortID="105054820">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShieldImpact" ID="{A9923397-EF69-4A6C-9930-44B95D94639A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Other" ID="{41FB39F0-9529-4A22-B979-F79691947747}" ShortID="702048380">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+				<Folder Name="BadGuys" ID="{7AE3CFA9-13D8-4808-BC2F-DDA3117FF6D9}" ShortID="165048350">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
