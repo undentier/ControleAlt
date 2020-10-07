@@ -7,6 +7,7 @@ public class TakeDamage : MonoBehaviour
     public GameObject Bar;
     public int AsteroidDmg;
     public int KamikazeDmg;
+    public int bulletDamage;
     
 
     private void OnTriggerEnter(Collider other)
@@ -22,6 +23,13 @@ public class TakeDamage : MonoBehaviour
         {
             Bar.GetComponent<HPBar>().HP -= KamikazeDmg;
            
+            Destroy(other.gameObject);
+        }
+
+        if (other.tag == "Bullet")
+        {
+            Bar.GetComponent<HPBar>().HP -= bulletDamage;
+
             Destroy(other.gameObject);
         }
     }
