@@ -188,6 +188,102 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Spaceship_Damages_Top" ID="{1F0A2ECA-9A0F-49A2-8D44-6FD1B0EAB28F}">
+							<ChildrenList>
+								<Action Name="" ID="{1961E07B-A455-452A-A5BA-B703418C586D}" ShortID="321411169">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LaserExplosion_Top" ID="{CCD3E463-C71B-4368-A12D-CBF997E20B63}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{379EE214-BC88-40E3-BF00-C32E9EF9321E}" ShortID="533028709">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MetalImpacts" ID="{1EE0AC23-6D2C-488D-8809-BF71650CC33A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ShieldExplosionImpact" ID="{1FCBF9AD-0171-40B4-B54C-617F39183219}">
+							<ChildrenList>
+								<Action Name="" ID="{C85EA6AE-30C3-4A43-A004-C3349D3A1C3D}" ShortID="1072618301">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShieldImpact_Top" ID="{A9923397-EF69-4A6C-9930-44B95D94639A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{553143A0-08C5-4066-9011-CF91AE75FDD5}" ShortID="742556973">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KamikazExplosion_Up" ID="{79598174-FB6C-4B79-80CF-74DCBAAA1883}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpaceShipe_ExplosionDamages_Up" ID="{9101C1C7-6C78-411F-AA03-DA23426DA4E3}">
+							<ChildrenList>
+								<Action Name="" ID="{7C5FC6C2-FF84-4906-9DB2-4063C360E736}" ShortID="193994232">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KamikazExplosion_Up" ID="{79598174-FB6C-4B79-80CF-74DCBAAA1883}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4FC0DA87-CC4C-4BAC-B3E2-EC1502DC809D}" ShortID="481855138">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.05"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MetalImpacts" ID="{1EE0AC23-6D2C-488D-8809-BF71650CC33A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Spaceship_Damages_Down" ID="{AEB495E3-1D39-4687-8021-F2E56171B493}">
+							<ChildrenList>
+								<Action Name="" ID="{0BA586DB-A4F7-43D7-8BFF-89A59B66A9C6}" ShortID="624242954">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LaserExplosion_Down" ID="{5B34CADC-7A98-435D-97E6-5050358357D4}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C8FA1A83-ECCE-4A24-8492-9E726D72AB0E}" ShortID="596208148">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MetalImpacts" ID="{1EE0AC23-6D2C-488D-8809-BF71650CC33A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpaceShipe_ExplosionDamages_Down" ID="{069A252B-BD2F-4D60-92C0-A3A57AEF2EE1}">
+							<ChildrenList>
+								<Action Name="" ID="{41E19CAE-D7BC-4CBB-B58C-BE12E3CCC332}" ShortID="536757248">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KamikazExplosion_Down" ID="{36EB43A8-B8D1-4043-81FC-5C807FB1BB62}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F22E15CB-A4D3-465F-AF99-223E082597D3}" ShortID="294339394">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.05"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MetalImpacts" ID="{1EE0AC23-6D2C-488D-8809-BF71650CC33A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Other" ID="{41FB39F0-9529-4A22-B979-F79691947747}" ShortID="702048380">
