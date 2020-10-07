@@ -25,7 +25,7 @@ public class shieldBar : MonoBehaviour
         if (Input.GetKeyUp(input) && Shield > 0)
         {
             Shield -= 1;
-            StartCoroutine(CheckCD(Shield));
+            //StartCoroutine(CheckCD(Shield));
         }
         if (Input.GetKeyUp(input2) && Shield < MaxShield)
         {
@@ -33,22 +33,23 @@ public class shieldBar : MonoBehaviour
         }
     }
 
-    IEnumerator CheckCD(int baseShield)
-    {
-        yield return new WaitForSeconds(3);
-        if (baseShield == Shield)
-        {
-            StartCoroutine(CDShield(Shield));
-        }
-    }
 
-    IEnumerator CDShield(int startShield)
-    {
+    //IEnumerator CheckCD(int baseShield)
+    //{
+    //    yield return new WaitForSeconds(3);
+    //    if (baseShield == Shield)
+    //    {
+    //        StartCoroutine(CDShield(Shield));
+    //    }
+    //}
 
-        for (int i = startShield; i < MaxShield; i++)
-        {
-            Shield += 1;
-            yield return new WaitForSeconds(1);
-        }
-    }
+    //IEnumerator CDShield(int startShield)
+    //{
+
+    //    for (int i = startShield; i < MaxShield; i++)
+    //    {
+    //        Shield += 1;
+    //        yield return new WaitForSeconds(1);
+    //    }
+    //}
 }

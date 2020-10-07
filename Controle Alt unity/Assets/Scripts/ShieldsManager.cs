@@ -41,6 +41,8 @@ namespace Ressources
                 ShieldLeft.SetActive(false);
             }
         }
+
+        
     }
 }
 
