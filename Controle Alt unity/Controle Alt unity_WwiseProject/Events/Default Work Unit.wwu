@@ -58,11 +58,11 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Shield_Impact" ID="{8D64999B-F8B5-46CF-8BA5-F1EE98F3306A}">
+						<Event Name="ShieldImpact_Top" ID="{8D64999B-F8B5-46CF-8BA5-F1EE98F3306A}">
 							<ChildrenList>
 								<Action Name="" ID="{F6A3141F-37B8-4921-B6D0-ED1CE1ADA95C}" ShortID="899119776">
 									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="Delay" Type="Real64" Value="0.35"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -73,7 +73,116 @@
 								<Action Name="" ID="{9D9E4E82-0105-4EEF-AF84-45AE691236A5}" ShortID="105054820">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="ShieldImpact" ID="{A9923397-EF69-4A6C-9930-44B95D94639A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+											<ObjectRef Name="ShieldImpact_Top" ID="{A9923397-EF69-4A6C-9930-44B95D94639A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LaserShoot_UpRight" ID="{428B87FE-7C34-48CD-BBE7-6EACD63AF8D3}">
+							<ChildrenList>
+								<Action Name="" ID="{2E1408BB-3F8F-4BB4-910C-EDD293E34BDD}" ShortID="363177372">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LaserShot_UpRight" ID="{3FF22053-5B25-48CA-8CB1-8595DB6D1735}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LaserShoot_UpLeft" ID="{9AEE5B97-A110-4597-8C81-ECF10A808DE6}">
+							<ChildrenList>
+								<Action Name="" ID="{C3469069-B2D1-4354-B914-FFB7F30E93B0}" ShortID="126449385">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LaserShot_UpLeft" ID="{2F06A0E6-C1A2-4D6F-910A-054B8FF965E4}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LaserShoot_DownRight" ID="{727A94D5-C964-430C-B93D-BE50431BAB42}">
+							<ChildrenList>
+								<Action Name="" ID="{CF630FBF-63D1-468E-BA4D-14C23B959FC5}" ShortID="336765974">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LaserShot_DownRight" ID="{E39C0B27-0FB2-4644-B249-93A4CB332505}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LaserShoot_DownLeft" ID="{F3E36459-3E91-44F7-9399-CB79D7B25460}">
+							<ChildrenList>
+								<Action Name="" ID="{B2B4556F-7F2E-4DDA-983E-8A6DCDEB2EB6}" ShortID="85992000">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LaserShot_DownLeft" ID="{9B2A44C5-733F-4368-97A2-B494144510EA}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ShieldImpact_Down" ID="{0E6D8215-D2C3-4BBB-A0C4-13EDAB0682EF}">
+							<ChildrenList>
+								<Action Name="" ID="{AC849D24-5416-4D6D-A2A6-BBF56A979D1A}" ShortID="955873674">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShieldImpact_Ondulation" ID="{5ADBA9BA-67D3-4C98-850A-E0C78E70A6EB}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{252C2A50-572B-47C5-9140-FE71878D1E35}" ShortID="534371548">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShieldImpact_Down" ID="{3FFCE62C-BB05-4E52-94D7-604083DF002B}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TurretMovement_UpRight" ID="{57E629A4-6D5A-4AF4-85E9-FF275280DFE9}">
+							<ChildrenList>
+								<Action Name="" ID="{F1703E1F-1573-4571-B2C8-5CD6633F450A}" ShortID="35511297">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MecanicalMovement_UpRight" ID="{5B203011-19E1-4C90-9A88-9C4F99167CD4}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TurretMovement_UpLeft" ID="{6B770560-6D49-47D3-8CC5-A5769CE13F16}">
+							<ChildrenList>
+								<Action Name="" ID="{2156CC13-DE67-4E5F-8941-71E7873AFB9D}" ShortID="1032115032">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MecanicalMovement_UpLeft" ID="{6BC0B207-59C6-46AF-9B83-0ACA38763E19}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TurretMovement_DownRight" ID="{5E18D31F-9D4F-4DA2-A75E-D6754DE19740}">
+							<ChildrenList>
+								<Action Name="" ID="{8C62D6CF-D3A8-4666-AD21-58E5E6C8AE8F}" ShortID="686860857">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MecanicalMovement_DownRight" ID="{BD65A58B-C887-4F16-86CD-4023A52E8D96}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TurretMovement_DownLeft" ID="{87B8C32D-2BBD-43F1-8EA3-47059680B28D}">
+							<ChildrenList>
+								<Action Name="" ID="{D107526E-8A0A-427F-8B4B-3C4F641FE059}" ShortID="810771852">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MecanicalMovement_DownLeft" ID="{188F76D2-106D-42A0-A440-28DF1765A324}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

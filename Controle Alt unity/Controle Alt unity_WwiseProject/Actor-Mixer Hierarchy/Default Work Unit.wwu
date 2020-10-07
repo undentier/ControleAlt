@@ -218,7 +218,7 @@
 										<Property Name="FadeInDuration" Type="Real64" Value="0.0690966002006081"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.270858672786384"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.259803216754286"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.63292485783757"/>
 										<Property Name="TrimEnd" Type="Real64" Value="1.34600177190784"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -230,58 +230,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="ShieldImpact_1" ID="{871091CA-036D-42A0-BCEA-ED0F65548DBB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="ShieldImpact" ID="{A9923397-EF69-4A6C-9930-44B95D94639A}" ShortID="751093820">
-							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>60</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-100</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{899637D0-094A-46B5-93CA-69B60558D37F}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="500"/>
-													<Property Name="Min" Type="Real64" Value="-500"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="ShieldImpact_2" ID="{F7580697-DD03-415E-AEA0-E603BBEB6307}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="1.1473670386112"/>
-										<Property Name="FadeOutShape" Type="int16" Value="1"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.255630998239801"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.64673922121918"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>ShieldImpact_2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1068871882"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="ShieldImpact_2" ID="{F7580697-DD03-415E-AEA0-E603BBEB6307}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Shield_Desactivate" ID="{63C3F33A-46D8-4976-BE0A-0CE5672948C7}" ShortID="325601595">
@@ -313,6 +261,8 @@
 							<ChildrenList>
 								<AudioFileSource Name="Shield-Desactivate" ID="{EEE3D3F3-3B92-4821-BC91-42D0BCF3D7FC}">
 									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.182519192415922"/>
+										<Property Name="FadeInShape" Type="int16" Value="6"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.333749380417686"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.187734026484949"/>
@@ -328,11 +278,29 @@
 								<ActiveSource Name="Shield-Desactivate" ID="{EEE3D3F3-3B92-4821-BC91-42D0BCF3D7FC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="LaserShot_UpRight" ID="{3FF22053-5B25-48CA-8CB1-8595DB6D1735}" ShortID="203719336">
+						<ActorMixer Name="Laser_Shots" ID="{4272C5AA-F5D7-466A-ACCC-B3F2F5FA3C42}" ShortID="1010779248">
 							<PropertyList>
-								<Property Name="3DPosition" Type="int16" Value="1"/>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>70</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-300</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{998D0E2F-4FAB-4C80-8341-3171366F2427}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -343,42 +311,241 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="LaserShot_2" ID="{DE3AA6E0-5F31-4CB7-B593-DDBC9005FD85}">
+								<Sound Name="LaserShot_UpLeft" ID="{2F06A0E6-C1A2-4D6F-910A-054B8FF965E4}" ShortID="841806130">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EAE6F5E9-61F9-404D-A7E4-A02F51DB49F1}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>LaserShot_2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1067481878"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<PositioningInfo>
-								<Position Name="" ID="{5AB7699F-738A-4D4C-91A2-91EE436EB421}">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<Path2D Name="LaserShot_UpRight_Path" ID="{1A21E986-1964-4AC5-A1D2-0C2B9E6585A2}">
-											<PointList>
-												<Point>
-													<XPos>65.82278</XPos>
-													<YPos>60.19108</YPos>
-													<Flags>12</Flags>
-													<Time>0</Time>
-												</Point>
-											</PointList>
-										</Path2D>
+										<AudioFileSource Name="LaserShot_2" ID="{77D759C0-321B-4DCD-8DDC-B97C3D8E1364}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserShot_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1067481878"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-								</Position>
-							</PositioningInfo>
-							<ActiveSourceList>
-								<ActiveSource Name="LaserShot_2" ID="{DE3AA6E0-5F31-4CB7-B593-DDBC9005FD85}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="LaserShot_UpLeft" ID="{2F06A0E6-C1A2-4D6F-910A-054B8FF965E4}" ShortID="841806130">
+									<PositioningInfo>
+										<Position Name="" ID="{71F59771-8688-4E28-A1C3-6D76DE0FB357}">
+											<ChildrenList>
+												<Path2D Name="LaserShot_UpLeft_Path" ID="{F25EB4AC-DBFF-442B-A328-2B8D0B14A825}">
+													<PointList>
+														<Point>
+															<XPos>-75</XPos>
+															<YPos>75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserShot_2" ID="{77D759C0-321B-4DCD-8DDC-B97C3D8E1364}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserShot_DownLeft" ID="{9B2A44C5-733F-4368-97A2-B494144510EA}" ShortID="129806365">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{508467B9-6303-4079-A8FA-6BC75868282A}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserShot_2" ID="{59D7C2FA-9090-4778-B987-1FA135922206}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserShot_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1067481878"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DC987D6C-49F5-49AE-BFDB-093B0863D704}">
+											<ChildrenList>
+												<Path2D Name="LaserShot_DownLeft_Path" ID="{00721955-D276-4180-8DBA-84176BD46C5B}">
+													<PointList>
+														<Point>
+															<XPos>-75</XPos>
+															<YPos>-75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserShot_2" ID="{59D7C2FA-9090-4778-B987-1FA135922206}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserShot_DownRight" ID="{E39C0B27-0FB2-4644-B249-93A4CB332505}" ShortID="384163138">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2EFBF6D2-777D-4013-94C3-E1E46342055A}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserShot_2" ID="{53FFC5A7-860C-4663-992D-660CFBA49C2B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserShot_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1067481878"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{369CA77E-64BA-413B-9221-AE073C48716A}">
+											<ChildrenList>
+												<Path2D Name="LaserShot_DownRight_Path" ID="{4CC520A6-73FF-4887-A271-C708B3BC71FB}">
+													<PointList>
+														<Point>
+															<XPos>75</XPos>
+															<YPos>-75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserShot_2" ID="{53FFC5A7-860C-4663-992D-660CFBA49C2B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserShot_UpRight" ID="{3FF22053-5B25-48CA-8CB1-8595DB6D1735}" ShortID="203719336">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C152B355-4CCB-498C-A525-612044B17D8B}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserShot_2" ID="{DE3AA6E0-5F31-4CB7-B593-DDBC9005FD85}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserShot_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1067481878"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{5AB7699F-738A-4D4C-91A2-91EE436EB421}">
+											<ChildrenList>
+												<Path2D Name="LaserShot_UpRight_Path" ID="{1A21E986-1964-4AC5-A1D2-0C2B9E6585A2}">
+													<PointList>
+														<Point>
+															<XPos>75</XPos>
+															<YPos>75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserShot_2" ID="{DE3AA6E0-5F31-4CB7-B593-DDBC9005FD85}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Mecanical_Movement" ID="{139D776E-0EE8-44D7-8C50-B8D5861BE485}" ShortID="1035654906">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>60</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1200</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -389,26 +556,227 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="LaserShot_2" ID="{77D759C0-321B-4DCD-8DDC-B97C3D8E1364}">
+								<Sound Name="MecanicalMovement_DownRight" ID="{BD65A58B-C887-4F16-86CD-4023A52E8D96}" ShortID="236964052">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>LaserShot_2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1067481878"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MecanicalMovement" ID="{69B3C8F7-BA6C-4FEC-AA73-968A9173B415}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.956933662736465"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67462526490803"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MecanicalMovement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="943769309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{31F9C671-4F95-4B2F-97C7-FE5C33D3ADD3}">
+											<ChildrenList>
+												<Path2D Name="MecanicalMovement_DownRight_Path" ID="{53FBEE2C-DC0C-4E47-843D-22467A566DF8}">
+													<PointList>
+														<Point>
+															<XPos>75</XPos>
+															<YPos>-75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="MecanicalMovement" ID="{69B3C8F7-BA6C-4FEC-AA73-968A9173B415}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MecanicalMovement_DownLeft" ID="{188F76D2-106D-42A0-A440-28DF1765A324}" ShortID="651252396">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MecanicalMovement" ID="{88F00785-F3B2-499C-B392-DC9A3E93EC80}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.956933662736465"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67462526490803"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MecanicalMovement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="943769309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DAA6690F-30B7-4602-A4AF-72FB98337DB3}">
+											<ChildrenList>
+												<Path2D Name="MecanicalMovement_DownLeft_Path" ID="{B37ECEF1-1196-4983-9941-7DBCDCAC0316}">
+													<PointList>
+														<Point>
+															<XPos>-75</XPos>
+															<YPos>-75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="MecanicalMovement" ID="{88F00785-F3B2-499C-B392-DC9A3E93EC80}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MecanicalMovement_UpRight" ID="{5B203011-19E1-4C90-9A88-9C4F99167CD4}" ShortID="815790392">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MecanicalMovement" ID="{A896BC04-91F4-4EE1-B6C3-8067124D6E2E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.956933662736465"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67462526490803"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MecanicalMovement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="943769309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{75AFA6B4-07F4-48E4-B327-FC531788EAEA}">
+											<ChildrenList>
+												<Path2D Name="MecanicalMovement_UpRight_Path" ID="{42954A6C-3DB1-42AC-8482-33F89F0FA238}">
+													<PointList>
+														<Point>
+															<XPos>75</XPos>
+															<YPos>75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="MecanicalMovement" ID="{A896BC04-91F4-4EE1-B6C3-8067124D6E2E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MecanicalMovement_UpLeft" ID="{6BC0B207-59C6-46AF-9B83-0ACA38763E19}" ShortID="679739168">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MecanicalMovement" ID="{D13B9B1C-0763-4855-8BFB-3E115CFBDD4D}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.956933662736465"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67462526490803"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MecanicalMovement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="943769309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{8AC20B57-FBDE-4F76-88A8-C8BA35B189C0}">
+											<ChildrenList>
+												<Path2D Name="MecanicalMovement_UpLeft_Path" ID="{C6F2070E-B394-4C93-BA80-D1336C8BF9D7}">
+													<PointList>
+														<Point>
+															<XPos>-75</XPos>
+															<YPos>75</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="MecanicalMovement" ID="{D13B9B1C-0763-4855-8BFB-3E115CFBDD4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="LaserShot_2" ID="{77D759C0-321B-4DCD-8DDC-B97C3D8E1364}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="LaserShot_DownRight" ID="{E39C0B27-0FB2-4644-B249-93A4CB332505}" ShortID="384163138">
+						</ActorMixer>
+						<ActorMixer Name="Shield_Impacts" ID="{521DD962-DE79-47DE-943C-BECA8E4830A4}" ShortID="847206339">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>60</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-100</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5D30BEB2-C2A6-46D3-978F-6580ECC04553}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="500"/>
+													<Property Name="Min" Type="Real64" Value="-500"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -419,52 +787,122 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="LaserShot_2" ID="{53FFC5A7-860C-4663-992D-660CFBA49C2B}">
+								<Sound Name="ShieldImpact_Down" ID="{3FFCE62C-BB05-4E52-94D7-604083DF002B}" ShortID="326588608">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{75A5A4C7-A294-424B-9536-56CB1EBD2442}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>LaserShot_2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1067481878"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="LaserShot_2" ID="{53FFC5A7-860C-4663-992D-660CFBA49C2B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="LaserShot_DownLeft" ID="{9B2A44C5-733F-4368-97A2-B494144510EA}" ShortID="129806365">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="LaserShot_2" ID="{59D7C2FA-9090-4778-B987-1FA135922206}">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ShieldImpact_2" ID="{0F4F8CCA-33D6-4B20-9C61-6C8A8F06D1FD}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.1473670386112"/>
+												<Property Name="FadeOutShape" Type="int16" Value="1"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.255630998239801"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.64673922121918"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ShieldImpact_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1068871882"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{C43FF54A-1A9F-4155-B41F-187DF6025D26}">
+											<ChildrenList>
+												<Path2D Name="ShieldImpact_Down_Path" ID="{EF92CFB9-2DBF-422C-B880-47CB24D00DA3}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>-50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="ShieldImpact_2" ID="{0F4F8CCA-33D6-4B20-9C61-6C8A8F06D1FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ShieldImpact_Top" ID="{A9923397-EF69-4A6C-9930-44B95D94639A}" ShortID="751093820">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.260207459696207"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{899637D0-094A-46B5-93CA-69B60558D37F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>LaserShot_2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1067481878"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ShieldImpact_2" ID="{F7580697-DD03-415E-AEA0-E603BBEB6307}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.1473670386112"/>
+												<Property Name="FadeOutShape" Type="int16" Value="1"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.255630998239801"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.64673922121918"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ShieldImpact_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1068871882"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{38F0DCA3-B024-4A3D-A873-C11ED03936F9}">
+											<ChildrenList>
+												<Path2D Name="ShieldImpact_Top_Path" ID="{E0645A63-BEEE-4D6C-92D3-FB579540E300}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="ShieldImpact_2" ID="{F7580697-DD03-415E-AEA0-E603BBEB6307}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="LaserShot_2" ID="{59D7C2FA-9090-4778-B987-1FA135922206}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="BadGuys" ID="{CB1DB71A-C9AE-4C23-AD0E-1E82FEF6CDA5}" ShortID="204192047">

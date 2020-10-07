@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Projets Unity\ControleAlt\Controle Alt unity\Controle Alt unity_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1446630518">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2862969430" Name="Engine_Start" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\Engine_Start" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="33727131" Language="SFX">
+							<ShortName>Engine_Idle.wav</ShortName>
+							<Path>SFX\Engine_Idle_C5579977.wem</Path>
+						</File>
+						<File Id="255269213" Language="SFX">
+							<ShortName>Engine_Boost.wav</ShortName>
+							<Path>SFX\Engine_Boost_2E04F6A9.wem</Path>
+						</File>
+						<File Id="746217442" Language="SFX">
+							<ShortName>Engine_Starting.wav</ShortName>
+							<Path>SFX\Engine_Starting_77B68C84.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3840785261" Name="LaserShoot_DownLeft" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\LaserShoot_DownLeft" DurationType="OneShot" DurationMin="0.668038" DurationMax="0.841676">
+					<IncludedMemoryFiles>
+						<File Id="1067481878" Language="SFX">
+							<ShortName>LaserShot_2.wav</ShortName>
+							<Path>SFX\LaserShot_2_CBEF74DF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2836862680" Name="LaserShoot_DownRight" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\LaserShoot_DownRight" DurationType="OneShot" DurationMin="0.668038" DurationMax="0.841676">
+					<IncludedMemoryFiles>
+						<File Id="1067481878" Language="SFX">
+							<ShortName>LaserShot_2.wav</ShortName>
+							<Path>SFX\LaserShot_2_CBEF74DF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3256852338" Name="LaserShoot_UpLeft" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\LaserShoot_UpLeft" DurationType="OneShot" DurationMin="0.668038" DurationMax="0.841676">
+					<IncludedMemoryFiles>
+						<File Id="1067481878" Language="SFX">
+							<ShortName>LaserShot_2.wav</ShortName>
+							<Path>SFX\LaserShot_2_CBEF74DF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1604459401" Name="LaserShoot_UpRight" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\LaserShoot_UpRight" DurationType="OneShot" DurationMin="0.668038" DurationMax="0.841676">
+					<IncludedMemoryFiles>
+						<File Id="1067481878" Language="SFX">
+							<ShortName>LaserShot_2.wav</ShortName>
+							<Path>SFX\LaserShot_2_CBEF74DF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2822200171" Name="ShieldImpact_Down" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\ShieldImpact_Down" DurationType="OneShot" DurationMin="1.105479" DurationMax="1.967324">
+					<IncludedMemoryFiles>
+						<File Id="4929685" Language="SFX">
+							<ShortName>ShieldImpact_1.wav</ShortName>
+							<Path>SFX\ShieldImpact_1_9A8995E5.wem</Path>
+						</File>
+						<File Id="1068871882" Language="SFX">
+							<ShortName>ShieldImpact_2.wav</ShortName>
+							<Path>SFX\ShieldImpact_2_01B11281.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3991162352" Name="ShieldImpact_Top" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\ShieldImpact_Top" DurationType="OneShot" DurationMin="1.105479" DurationMax="1.967324">
+					<IncludedMemoryFiles>
+						<File Id="4929685" Language="SFX">
+							<ShortName>ShieldImpact_1.wav</ShortName>
+							<Path>SFX\ShieldImpact_1_9A8995E5.wem</Path>
+						</File>
+						<File Id="1068871882" Language="SFX">
+							<ShortName>ShieldImpact_2.wav</ShortName>
+							<Path>SFX\ShieldImpact_2_01B11281.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="254335116" Name="TurretMovement_DownLeft" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\TurretMovement_DownLeft" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="943769309" Language="SFX">
+							<ShortName>MecanicalMovement.wav</ShortName>
+							<Path>SFX\MecanicalMovement_9B9A509B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3859047051" Name="TurretMovement_DownRight" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\TurretMovement_DownRight" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="943769309" Language="SFX">
+							<ShortName>MecanicalMovement.wav</ShortName>
+							<Path>SFX\MecanicalMovement_9B9A509B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1850191103" Name="TurretMovement_UpLeft" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\TurretMovement_UpLeft" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="943769309" Language="SFX">
+							<ShortName>MecanicalMovement.wav</ShortName>
+							<Path>SFX\MecanicalMovement_9B9A509B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1182029954" Name="TurretMovement_UpRight" ObjectPath="\Events\Default Work Unit\SpaceShip_Ext\TurretMovement_UpRight" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="943769309" Language="SFX">
+							<ShortName>MecanicalMovement.wav</ShortName>
+							<Path>SFX\MecanicalMovement_9B9A509B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

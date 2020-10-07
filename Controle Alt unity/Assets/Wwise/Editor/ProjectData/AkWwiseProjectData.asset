@@ -49,8 +49,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 24d8305e2ac0564f989c786050abc11d
     GuidInternal: 
-    m_lastTime: -8585997028926213516
-    List: []
+    m_lastTime: -8585995480792105812
+    List:
+    - name: Main
+      guid: 8e2e08e276ba684f9fd562708c741166
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -59,8 +68,108 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4f6f1b2064c3f947be10063efc5cb216
     GuidInternal: 
-    m_lastTime: -8585997028925833911
-    List: []
+    m_lastTime: -8585995464829103221
+    List:
+    - name: Ambients
+      guid: cded2e4e5f1e8d40a473afe3110e83d3
+      id: 4095160042
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambients
+        ObjectType: 4
+      Path: Default Work Unit\Ambients
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BadGuys
+      guid: a9cfe37ad8130848bc2fdda3117ff6d9
+      id: 174708150
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BadGuys
+        ObjectType: 4
+      Path: Default Work Unit\BadGuys
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Engine_Start
+      guid: 4527340608292444a2da6b7adf524f2a
+      id: 2862969430
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: Engine_Start
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\Engine_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Musics
+      guid: 972d1608e263354fb74a95d16d06e604
+      id: 1730564753
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      Path: Default Work Unit\Musics
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Other
+      guid: f039fb412995224ab979f79691947747
+      id: 2376466361
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Other
+        ObjectType: 4
+      Path: Default Work Unit\Other
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Shield_Impact
+      guid: 9b99648db5f8cf468ba5f1ee98f3306a
+      id: 3802027347
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: Shield_Impact
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\Shield_Impact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpaceShip_Ext
+      guid: 632cc35faa3ae24d9a66bf4a6c3eaf9a
+      id: 3898855771
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      Path: Default Work Unit\SpaceShip_Ext
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpaceShip_Int
+      guid: eebd1e75b7c4254cb605c1d37131f057
+      id: 3594887089
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Int
+        ObjectType: 4
+      Path: Default Work Unit\SpaceShip_Int
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -101,6 +210,10 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585997028927002667
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Controle Alt unity_WwiseProject
+  - /Controle Alt unity_WwiseProject/Events
+  - /Controle Alt unity_WwiseProject/Events/Default Work Unit
+  - /Controle Alt unity_WwiseProject/Events/Default Work Unit/SpaceShip_Ext
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
