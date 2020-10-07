@@ -7,6 +7,7 @@ public class ShieldInteraction : MonoBehaviour
     public GameObject Bar;
     public int AsteroidDmg;
     public int KamikazeDmg;
+    public int bulletDamage;
    
 
 
@@ -24,6 +25,13 @@ public class ShieldInteraction : MonoBehaviour
         {
             Bar.GetComponent<shieldBar>().Shield -= KamikazeDmg;
             
+            Destroy(other.gameObject);
+        }
+
+        if (other.tag == "Bullet")
+        {
+            Bar.GetComponent<shieldBar>().Shield -= bulletDamage;
+
             Destroy(other.gameObject);
         }
     }

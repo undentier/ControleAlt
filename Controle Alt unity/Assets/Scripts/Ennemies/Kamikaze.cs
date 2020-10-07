@@ -46,19 +46,6 @@ namespace Ennemis
             transform.position += dir.normalized * MoveSpeed * Time.deltaTime;  //déplacement du kamikaze
         }
 
-        private void OnCollisionEnter(Collision collision)  //detection de la collision avec le Player
-        {
-            if (collision.collider.tag == "Player")
-            {
-                Explode();
-            }
-        }
-
-        void Explode() //explosion du kamikaze
-        {
-            Destroy(gameObject);
-        }
-        
     }
 }
 
