@@ -843,7 +843,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -958,12 +958,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4423406923144938192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fa3d8af08f4f0d44b2ff0b31280edb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d2d2b6589212464dbb453bf9dce20f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ShieldBar: {fileID: 1655315901}
-  input: y
-  input2: t
+  input: f
+  input2: h
   MaxShield: 10
   Shield: 10
 --- !u!1 &4423406923960848741

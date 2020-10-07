@@ -9,7 +9,7 @@ using ManagerPlayer;
 /// </summary>
 namespace Ennemis
 {
-    
+
     public class Kamikaze : MonoBehaviour
     {
         public GameObject ReferenceTurret; //la tourelle ciblée par le kamikaze
@@ -24,7 +24,7 @@ namespace Ennemis
             for (int i = 0; i < PlayerManager.Instance.turret.Length; i++)
             {
                 float distance = Vector3.Distance(transform.position, PlayerManager.Instance.turret[i].transform.position);
-                
+
                 if (distance < nearDistance)
                 {
                     nearDistance = distance;
@@ -37,13 +37,14 @@ namespace Ennemis
 
         void Update()
         {
-            
+
             dir = ReferenceTurret.transform.position - transform.position; //on calcule le vecteur allant du kamikaze à la tourelle
 
             transform.rotation = Quaternion.LookRotation(dir);  // on ajuste la rotation du kamikaze pour qu'il regarde sa cible
 
             transform.position += dir.normalized * MoveSpeed * Time.deltaTime;  //déplacement du kamikaze
 
+        }
     }
 }
 
