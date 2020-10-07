@@ -12,6 +12,11 @@ public class TurretShoot : MonoBehaviour
     private bool canShoot;
     private bool stopCoroutine;
 
+
+    [Space(10)]
+    [Header("Audio")]
+    public AK.Wwise.Event TurretShootAudio;
+
     void Start()
     {
         canShoot = false;
@@ -43,7 +48,8 @@ public class TurretShoot : MonoBehaviour
     IEnumerator Fire()
     {
         stopCoroutine = true;
-        GameObject bullet = Instantiate(objectBullet, gameObject.transform.position, gameObject.transform.rotation); 
+        GameObject bullet = Instantiate(objectBullet, gameObject.transform.position, gameObject.transform.rotation);
+        TurretShootAudio.Post(gameObject);
         yield return new WaitForSeconds(fireRate);
         stopCoroutine = false;
     }

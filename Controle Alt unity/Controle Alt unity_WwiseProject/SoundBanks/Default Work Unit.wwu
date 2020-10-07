@@ -4,7 +4,19 @@
 		<WorkUnit Name="Default Work Unit" ID="{5E30D824-C02A-4F56-989C-786050ABC11D}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{E2082E8E-BA76-4F68-9FD5-62708C741166}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="LaserShoot_DownRight" ID="{727A94D5-C964-430C-B93D-BE50431BAB42}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TurretMovement_DownLeft" ID="{87B8C32D-2BBD-43F1-8EA3-47059680B28D}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Engine_Start" ID="{06342745-2908-4424-A2DA-6B7ADF524F2A}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LaserShoot_DownLeft" ID="{F3E36459-3E91-44F7-9399-CB79D7B25460}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LaserShoot_UpLeft" ID="{9AEE5B97-A110-4597-8C81-ECF10A808DE6}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ShieldImpact_Top" ID="{8D64999B-F8B5-46CF-8BA5-F1EE98F3306A}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TurretMovement_UpLeft" ID="{6B770560-6D49-47D3-8CC5-A5769CE13F16}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LaserShoot_UpRight" ID="{428B87FE-7C34-48CD-BBE7-6EACD63AF8D3}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TurretMovement_UpRight" ID="{57E629A4-6D5A-4AF4-85E9-FF275280DFE9}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ShieldImpact_Down" ID="{0E6D8215-D2C3-4BBB-A0C4-13EDAB0682EF}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TurretMovement_DownRight" ID="{5E18D31F-9D4F-4DA2-A75E-D6754DE19740}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

@@ -14,6 +14,14 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MecanicalMovement_UpRight" ID="{5B203011-19E1-4C90-9A88-9C4F99167CD4}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="LaserShot_UpLeft" ID="{2F06A0E6-C1A2-4D6F-910A-054B8FF965E4}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Engine_Boost" ID="{AB1F0F72-9DF4-4EF7-8AFA-52A0D16EEC70}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
 							<Position X="1" Y="1"/>
 						</Module>
