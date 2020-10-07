@@ -7,6 +7,8 @@ public class PlayerBullet : MonoBehaviour
     public float speed;
     private Rigidbody bulletRb;
 
+    public int damage;
+
     void Start()
     {
         bulletRb = gameObject.GetComponent<Rigidbody>();

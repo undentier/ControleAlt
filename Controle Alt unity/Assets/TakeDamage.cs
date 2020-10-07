@@ -8,6 +8,8 @@ public class TakeDamage : MonoBehaviour
     public int AsteroidDmg;
     public int KamikazeDmg;
     public int bulletDamage;
+
+    public GameObject fxExplosion;
     
 
     private void OnTriggerEnter(Collider other)
@@ -16,15 +18,17 @@ public class TakeDamage : MonoBehaviour
         if (other.tag == "Asteroid")
         {
             Bar.GetComponent<HPBar>().HP -= AsteroidDmg;
+
             Destroy(other.gameObject);
         }
 
         if (other.tag == "Kamikaze")
         {
             Bar.GetComponent<HPBar>().HP -= KamikazeDmg;
-            
 
-
+            GameObject explosion = Instantiate(fxExplosion, transform.position, transform.rotation);
+            Destroy(explosion, 3f);
+      
             Destroy(other.gameObject);
         }
 

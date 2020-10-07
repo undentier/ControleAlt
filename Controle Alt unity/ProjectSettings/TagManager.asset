@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Asteroid
   - Kamikaze
+  - Bullet
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
