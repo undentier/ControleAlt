@@ -8,6 +8,12 @@ public class EventFeedBack : MonoBehaviour
 
     public bool panneCourantActive = false;
 
+
+
+    public GameObject popUp;
+
+    public GameObject panneDeCourantPicto;
+
     private void Awake()
     {
         if (instance != null)
@@ -27,22 +33,38 @@ public class EventFeedBack : MonoBehaviour
 
     private void Update()
     {
-        
+        Picto(); //on vérifie h24 si y'a un bail
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            PanneDeCourant();
+        }
     }
 
+
+    public void Picto()
+    {
+        //check les bools pour savoir si on nique ou pas tel picto
+
+        if (panneCourantActive == false)
+        {
+            panneDeCourantPicto.SetActive(false);
+        }
+        else if (panneCourantActive)
+        {
+            panneDeCourantPicto.SetActive(true);
+        }
+    }
 
     public void PanneDeCourant()
     {
         //(olha se calhar seria melhor de meter os efeitos visuais aqui tbm)
+        Instantiate(popUp);    //warning pop-up
+        panneCourantActive = true;    //bool set true
+        
 
-        //bool set true
-        //warning pop-up
-        //warning pop-off    bem quer dizer tecnicamente seria melhor se eu fizer uma funçao para gerir o pop-up/off
-        //um feedback que fica crlh, um GameObject 
-        //depois temos de verificar se o problema foi resolvido ou nao
-            //bem aqui temos um problema boy
-                //okok entao podemos ter dois bools para cada problema (14 bools ouch)
-                //verificar se um bool ta ativado
-                //se ele nao for entao bora destruir o gameobject
+
+
+        Debug.Log("Event is on");
     }
 }
