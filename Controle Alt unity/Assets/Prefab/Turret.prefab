@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 2110204253197449345}
   - component: {fileID: 2120738973495577899}
   - component: {fileID: 2107310478893822078}
+  - component: {fileID: 204071759131980989}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -257,6 +258,30 @@ MonoBehaviour:
   leftInput: TurretLeft
   maxRotation: 45
   rotationSpeed: 30
+  rotationAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+--- !u!114 &204071759131980989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107310478893822077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c471bf57fb77c1944b101ee5a9488250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: Fire
+  fireRate: 0.1
+  objectBullet: {fileID: 2867320030815606381, guid: 708dd43af2fd97c4aa06fa5ce1e9b7fa,
+    type: 3}
+  TurretShootAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &2107348153455223141
 GameObject:
   m_ObjectHideFlags: 0

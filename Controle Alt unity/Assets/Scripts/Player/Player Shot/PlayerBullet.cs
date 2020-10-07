@@ -12,5 +12,7 @@ public class PlayerBullet : MonoBehaviour
         bulletRb = gameObject.GetComponent<Rigidbody>();
 
         bulletRb.AddForce(gameObject.transform.forward * speed);
+
+        Destroy(gameObject, 3f);
     }
 }

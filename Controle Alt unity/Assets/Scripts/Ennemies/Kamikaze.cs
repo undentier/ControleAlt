@@ -15,8 +15,7 @@ namespace Ennemis
         public GameObject ReferenceTurret; //la tourelle ciblée par le kamikaze
         Vector3 dir; //le vecteur entre la tourelle et le kamikaze
         public float MoveSpeed; //Vitesse de déplacement du kamikaze (modifiable)
-        
-        
+
 
         private float nearDistance = 10000000f;
 
@@ -44,7 +43,6 @@ namespace Ennemis
             transform.rotation = Quaternion.LookRotation(dir);  // on ajuste la rotation du kamikaze pour qu'il regarde sa cible
 
             transform.position += dir.normalized * MoveSpeed * Time.deltaTime;  //déplacement du kamikaze
-        }
 
     }
 }

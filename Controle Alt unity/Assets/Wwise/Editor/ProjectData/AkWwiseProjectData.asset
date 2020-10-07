@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ec2531bc547a904fb9ab4b43ba33c99b
     GuidInternal: 
-    m_lastTime: -8585997028926373350
+    m_lastTime: -8585997007144909288
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d2d81f36087c384db20f9c7802abb815
     GuidInternal: 
-    m_lastTime: -8585997028925893858
+    m_lastTime: -8585997007145298991
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 24d8305e2ac0564f989c786050abc11d
     GuidInternal: 
-    m_lastTime: -8585995480792105812
+    m_lastTime: -8585995337154663047
     List:
     - name: Main
       guid: 8e2e08e276ba684f9fd562708c741166
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4f6f1b2064c3f947be10063efc5cb216
     GuidInternal: 
-    m_lastTime: -8585995464829103221
+    m_lastTime: -8585995337154882447
     List:
     - name: Ambients
       guid: cded2e4e5f1e8d40a473afe3110e83d3
@@ -108,6 +108,62 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: LaserShoot_DownLeft
+      guid: 5964e3f3913ef7449399cb79d7b25460
+      id: 3840785261
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: LaserShoot_DownLeft
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\LaserShoot_DownLeft
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LaserShoot_DownRight
+      guid: d5947a7264c90c43b93dbe50431bab42
+      id: 2836862680
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: LaserShoot_DownRight
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\LaserShoot_DownRight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LaserShoot_UpLeft
+      guid: 975bee9a10a197458c81ecf10a808de6
+      id: 3256852338
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: LaserShoot_UpLeft
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\LaserShoot_UpLeft
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LaserShoot_UpRight
+      guid: fe878b42347ccd48bbe76eacd63af8d3
+      id: 1604459401
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: LaserShoot_UpRight
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\LaserShoot_UpRight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Musics
       guid: 972d1608e263354fb74a95d16d06e604
       id: 1730564753
@@ -132,17 +188,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Shield_Impact
-      guid: 9b99648db5f8cf468ba5f1ee98f3306a
-      id: 3802027347
+    - name: ShieldImpact_Down
+      guid: 15826d0ec3d2bb4ba0c413edab0682ef
+      id: 2822200171
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: SpaceShip_Ext
         ObjectType: 4
-      - ElementName: Shield_Impact
+      - ElementName: ShieldImpact_Down
         ObjectType: 3
-      Path: Default Work Unit\SpaceShip_Ext\Shield_Impact
+      Path: Default Work Unit\SpaceShip_Ext\ShieldImpact_Down
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ShieldImpact_Top
+      guid: 9b99648db5f8cf468ba5f1ee98f3306a
+      id: 3991162352
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: ShieldImpact_Top
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\ShieldImpact_Top
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -170,6 +240,62 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: TurretMovement_DownLeft
+      guid: 2dc3b887bd2bf1438ea347059680b28d
+      id: 254335116
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: TurretMovement_DownLeft
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\TurretMovement_DownLeft
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TurretMovement_DownRight
+      guid: 1fd3185e4f9da24da75ed6754de19740
+      id: 3859047051
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: TurretMovement_DownRight
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\TurretMovement_DownRight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TurretMovement_UpLeft
+      guid: 6005776b496dd3478cc5a5769ce13f16
+      id: 1850191103
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: TurretMovement_UpLeft
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\TurretMovement_UpLeft
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TurretMovement_UpRight
+      guid: a429e6575a6df44a85e9ff275280dfe9
+      id: 1182029954
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: TurretMovement_UpRight
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\TurretMovement_UpRight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -178,7 +304,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4057619d25198a43a29b031bd6fd4c16
     GuidInternal: 
-    m_lastTime: -8585997028927082601
+    m_lastTime: -8585997007145378708
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -188,7 +314,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2dd59342272e5d40b17255a3a7bd28c2
     GuidInternal: 
-    m_lastTime: -8585997028927372192
+    m_lastTime: -8585997007145029014
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -198,7 +324,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 14cb1060138b8740b9c3dee5cae90d5a
     GuidInternal: 
-    m_lastTime: -8585997028926013730
+    m_lastTime: -8585997007145009065
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -208,7 +334,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d72d48ab2606c94e829c8f62554a9d8b
     GuidInternal: 
-    m_lastTime: -8585997028927002667
+    m_lastTime: -8585997007144979139
     List: []
   ExpandedItems:
   - /Controle Alt unity_WwiseProject

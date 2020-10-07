@@ -82,7 +82,7 @@ namespace Manager
 
         void StartGame()
         {
-            if (Input.GetButtonDown("Fire"))
+            if (Input.GetButtonDown("Start"))
             {
                 if (start == false)
                 {
