@@ -15,8 +15,6 @@ namespace Ressources
     {
         public GameObject ShieldLeft;
         public GameObject ShieldRight;
-        public string LeftInput;
-        public string RightInput;
 
         // Start is called before the first frame update
         void Start()
@@ -29,13 +27,13 @@ namespace Ressources
         void Update()
         {
             
-            if (Input.GetKey(LeftInput))
+            if (Input.GetButtonDown("ShieldLeft"))
             {
                 ShieldLeft.SetActive(true);
                 ShieldRight.SetActive(false);
             }
 
-            if (Input.GetKey(RightInput))
+            if (Input.GetButtonDown("ShieldRight"))
             {
                 ShieldRight.SetActive(true);
                 ShieldLeft.SetActive(false);
