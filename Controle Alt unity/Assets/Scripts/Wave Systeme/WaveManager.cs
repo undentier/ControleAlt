@@ -54,6 +54,16 @@ namespace Manager
 
         [Header ("Ennemi en vie")]
         public List<GameObject> counter = new List<GameObject>();
+
+        [Header("Liste des emergency")]
+        public List<GameObject> emergencyList = new List<GameObject>();
+
+        [Header("nombre des emeregency")]
+        public int emergencyIndex;
+
+        [Header("Numéro de la vague actuel")]
+        public bool emergencyState;
+
         #endregion
 
         void Start()
@@ -117,6 +127,7 @@ namespace Manager
                 {
                     waveActive = true;
                     StartCoroutine(ActiveWave());
+                    StartCoroutine(Emergency());
                 }
             }
         }
@@ -127,11 +138,27 @@ namespace Manager
             yield return new WaitForSeconds(timeBtwWave);
 
             numberOfWave += 1;
-
+            timeBtwEmergency -= EmergencyTimeAdd;
+            chanceOfEmergency += EmergencyChanceAdd;
             numberKamikaze += kamikazeAdd;
             numberShoter += shoterAdd;
 
             canSpawn = true;
+        }
+        IEnumerator Emergency()
+        {
+            if (Random.Range(0,100)<chanceOfEmergency)
+            {
+                if (waveActive)
+                {
+                    emergencyState = true;
+                    emergencyIndex = Random.Range(0, emergencyList.Count);
+                    yield return new WaitForSeconds(timeBtwEmergency);
+                    emergencyState = false;
+                }
+            }
+            
+            
         }
     }
 }
