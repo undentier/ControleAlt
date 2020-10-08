@@ -32,23 +32,23 @@ namespace PlayerMouvement
 
         void Mouvement()
         {
-            if (Input.GetButtonDown("Up"))
+            if (Input.GetButtonDown("MoveUp"))
             {
                 shipRb.velocity = speed * Vector3.forward * Time.fixedDeltaTime;
             }
 
-            if (Input.GetButtonUp("Up"))
+            if (Input.GetButtonUp("MoveUp"))
             {
                 shipRb.velocity = Vector3.zero;
             }
 
 
-            if (Input.GetButtonDown("Down"))
+            if (Input.GetButtonDown("MoveDown"))
             {
                 shipRb.velocity = speed * Vector3.back * Time.fixedDeltaTime;
             }
 
-            if (Input.GetButtonUp("Down"))
+            if (Input.GetButtonUp("MoveDown"))
             {
                 shipRb.velocity = Vector3.zero;
             }

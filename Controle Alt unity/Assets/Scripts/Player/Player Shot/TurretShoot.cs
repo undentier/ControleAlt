@@ -53,5 +53,4 @@ public class TurretShoot : MonoBehaviour
         yield return new WaitForSeconds(fireRate);
         stopCoroutine = false;
     }
-
 }

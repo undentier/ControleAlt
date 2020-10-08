@@ -37,7 +37,7 @@ public class SCRIPTDEMERDE : MonoBehaviour
         yield return new WaitForSeconds(17);
         hyperespace.SetActive(true);
         stars.SetActive(true);
-        rb.AddForce(-10000, 0, 0);
+        rb.AddForce(-50000, 0, 0);
         yield return new WaitForSeconds(5.5f);
         hyperespace.SetActive(false);
         Destroy(gameObject);
