@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &82755350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -255,8 +255,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panneCourantActive: 0
+  panneReacteurActive: 0
+  fuiteActive: 0
+  enrayementActive: 0
+  signalVideoActive: 0
+  surchauffeActive: 0
   popUp: {fileID: 9081536150082770728, guid: c3c23346a5300f74088f650b24653f68, type: 3}
   panneDeCourantPicto: {fileID: 82755349}
+  panneReacteurPicto: {fileID: 0}
+  fuitePicto: {fileID: 0}
+  enrayementPicto: {fileID: 0}
+  signalVideoPicto: {fileID: 0}
+  surchauffePicto: {fileID: 0}
 --- !u!1 &286386462
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class PopUp : MonoBehaviour
     {
 
         //euh on veut juste l'animation j'imagine
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 5);
 
     }
 }

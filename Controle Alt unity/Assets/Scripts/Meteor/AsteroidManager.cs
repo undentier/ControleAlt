@@ -39,10 +39,10 @@ public class AsteroidManager : MonoBehaviour
         {
             Instantiate(asteroids[Random.Range(0, asteroids.Length)], temp, Quaternion.identity);
         }
-        else
+        /*else
         {
             Instantiate(shooter, temp, Quaternion.Euler(0f, -90f, 0f));
-        }
+        }*/
 
         Invoke("Spawner", timer);
     }
