@@ -1,5 +1,105 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3824711598510002646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104012816374120164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AsteroidDmg: 1
+  KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96ae4a2f01ea034479d46de86f6ec4e6,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a54099dcbd103d64eacb93b4b6b9a030,
+      type: 2}
+--- !u!114 &3824711599275882482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104012816688847010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AsteroidDmg: 1
+  KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96ae4a2f01ea034479d46de86f6ec4e6,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a54099dcbd103d64eacb93b4b6b9a030,
+      type: 2}
+--- !u!114 &3824711598836037911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104012817364984780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AsteroidDmg: 1
+  KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa0ffb66276e6a64daab82d7f5947254,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 88dda2b61c0efcb4395c2b8955f096df,
+      type: 2}
+--- !u!114 &3824711597809832572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104012817551014080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AsteroidDmg: 1
+  KamikazeDmg: 2
+  bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa0ffb66276e6a64daab82d7f5947254,
+      type: 2}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 88dda2b61c0efcb4395c2b8955f096df,
+      type: 2}
 --- !u!1 &3032776888659741967
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3824711597877302977}
   m_Layer: 0
-  m_Name: "Tourelle arri\xE8re"
+  m_Name: Tourelle Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,81 +256,6 @@ Transform:
   m_Father: {fileID: 3035208035709557923}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3824711599275882482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104012816688847010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AsteroidDmg: 1
-  KamikazeDmg: 2
-  bulletDamage: 0
-  laserShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 96ae4a2f01ea034479d46de86f6ec4e6,
-      type: 2}
-  KamikazShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a54099dcbd103d64eacb93b4b6b9a030,
-      type: 2}
---- !u!114 &3824711598510002646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104012816374120164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AsteroidDmg: 1
-  KamikazeDmg: 2
-  bulletDamage: 0
-  laserShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 96ae4a2f01ea034479d46de86f6ec4e6,
-      type: 2}
-  KamikazShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a54099dcbd103d64eacb93b4b6b9a030,
-      type: 2}
---- !u!114 &3824711597809832572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104012817551014080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AsteroidDmg: 1
-  KamikazeDmg: 2
-  bulletDamage: 0
-  laserShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: aa0ffb66276e6a64daab82d7f5947254,
-      type: 2}
-  KamikazShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 88dda2b61c0efcb4395c2b8955f096df,
-      type: 2}
 --- !u!1 &3824711598818873895
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,31 +319,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3824711598836037911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104012817364984780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 347e77e90f626dc4c8f6ef2dc2f66993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AsteroidDmg: 1
-  KamikazeDmg: 2
-  bulletDamage: 0
-  laserShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: aa0ffb66276e6a64daab82d7f5947254,
-      type: 2}
-  KamikazShieldAudio:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 88dda2b61c0efcb4395c2b8955f096df,
-      type: 2}
 --- !u!1 &4670338087752191479
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 934565891879744141}
   m_Layer: 0
-  m_Name: Tourelle Avant
+  m_Name: Tourelle Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,6 +364,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: df5e956ce4d38c346b2b1be780bfb693,
         type: 2}
+    - target: {fileID: 204071759131980989, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: input
+      value: TopRightTurret_Fire
+      objectReference: {fileID: 0}
     - target: {fileID: 2104216152628704121, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -437,7 +442,7 @@ PrefabInstance:
     - target: {fileID: 2107310478893822077, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_Name
-      value: Turret Avant Haut
+      value: Turret_TopRight
       objectReference: {fileID: 0}
     - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
@@ -445,6 +450,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: c0e881b5eaa7eb946a58ee12aed7f380,
         type: 2}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: rightInput
+      value: TopRightTurret_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: leftInput
+      value: TopRightTurret_Left
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e92bf2e675f11b94689dc7c0dff3cff6, type: 3}
 --- !u!4 &2893483175265619148 stripped
@@ -466,6 +481,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 800f17e15d9a3c04592cd85dbad0918b,
         type: 2}
+    - target: {fileID: 204071759131980989, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: input
+      value: DownRightTurret_Fire
+      objectReference: {fileID: 0}
     - target: {fileID: 2104216152628704121, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -539,7 +559,7 @@ PrefabInstance:
     - target: {fileID: 2107310478893822077, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_Name
-      value: Turret Avant Bas
+      value: Turret_DownRight
       objectReference: {fileID: 0}
     - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
@@ -547,6 +567,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 552c0ceb65eea554b9fe869f0d530ce8,
         type: 2}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: rightInput
+      value: DownRightTurret_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: leftInput
+      value: DownRightTurret_Left
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e92bf2e675f11b94689dc7c0dff3cff6, type: 3}
 --- !u!4 &2893483174936309680 stripped
@@ -568,6 +598,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 136707c86bb7e5d478a9e856be445415,
         type: 2}
+    - target: {fileID: 204071759131980989, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: input
+      value: DownLeftTurret_Fire
+      objectReference: {fileID: 0}
     - target: {fileID: 2104216152628704121, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -641,7 +676,7 @@ PrefabInstance:
     - target: {fileID: 2107310478893822077, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_Name
-      value: "Turret Arri\xE8re Bas"
+      value: Turret_DownLeft
       objectReference: {fileID: 0}
     - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
@@ -649,6 +684,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 21c260c857610df43afb827d5e018110,
         type: 2}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: rightInput
+      value: DownLeftTurret_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: leftInput
+      value: DownLeftTurret_Left
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e92bf2e675f11b94689dc7c0dff3cff6, type: 3}
 --- !u!4 &2893483176493172300 stripped
@@ -670,6 +715,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 9e21335a77a6ac24abcc7e65fb2e3b60,
         type: 2}
+    - target: {fileID: 204071759131980989, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: input
+      value: TopLeftTurret_Fire
+      objectReference: {fileID: 0}
     - target: {fileID: 2104216152628704121, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -743,14 +793,24 @@ PrefabInstance:
     - target: {fileID: 2107310478893822077, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: m_Name
-      value: "Turret arri\xE8re Haut"
+      value: Turret_TopLeft
       objectReference: {fileID: 0}
     - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
         type: 3}
       propertyPath: rotationAudio.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: c0e881b5eaa7eb946a58ee12aed7f380,
+      objectReference: {fileID: 11400000, guid: d98221f3bb0619b43a962d6358e489bd,
         type: 2}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: rightInput
+      value: TopLeftTurret_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107310478893822078, guid: e92bf2e675f11b94689dc7c0dff3cff6,
+        type: 3}
+      propertyPath: leftInput
+      value: TopLeftTurret_Left
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e92bf2e675f11b94689dc7c0dff3cff6, type: 3}
 --- !u!4 &2893483176415936039 stripped
