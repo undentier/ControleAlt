@@ -6,6 +6,7 @@ public class SCRIPTDEMERDE : MonoBehaviour
 {
     public AK.Wwise.Event decollageAudio;
     public GameObject stars;
+    public GameObject hyperespace;
 
     private Rigidbody rb;
     bool canStart = true;
@@ -15,6 +16,7 @@ public class SCRIPTDEMERDE : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody>();
         stars.SetActive(false);
+        hyperespace.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -31,10 +33,14 @@ public class SCRIPTDEMERDE : MonoBehaviour
     {
         canStart = false;
         decollageAudio.Post(gameObject);
-        rb.AddForce(-100, 0, 0);
+        rb.AddForce(-200, 0, 0);
         yield return new WaitForSeconds(17);
+        hyperespace.SetActive(true);
         stars.SetActive(true);
         rb.AddForce(-10000, 0, 0);
+        yield return new WaitForSeconds(5.5f);
+        hyperespace.SetActive(false);
+        Destroy(gameObject);
     }
 
     private void OnBecameInvisible()
