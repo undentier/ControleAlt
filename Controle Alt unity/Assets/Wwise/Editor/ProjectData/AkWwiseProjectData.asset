@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 24d8305e2ac0564f989c786050abc11d
     GuidInternal: 
-    m_lastTime: -8585995337154663047
+    m_lastTime: -8585995216292544928
     List:
     - name: Main
       guid: 8e2e08e276ba684f9fd562708c741166
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4f6f1b2064c3f947be10063efc5cb216
     GuidInternal: 
-    m_lastTime: -8585995272712289678
+    m_lastTime: -8585995216292634840
     List:
     - name: Ambients
       guid: cded2e4e5f1e8d40a473afe3110e83d3
@@ -188,17 +188,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: ShieldExplosionImpact
-      guid: adf9cb1f7101b440b54c617f39183219
-      id: 2298054145
+    - name: ShieldExplosionImpact_Down
+      guid: 9a50bfcf3beeda45a21993084d2af25f
+      id: 4241304272
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: SpaceShip_Ext
         ObjectType: 4
-      - ElementName: ShieldExplosionImpact
+      - ElementName: ShieldExplosionImpact_Down
         ObjectType: 3
-      Path: Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact
+      Path: Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact_Down
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ShieldExplosionImpact_Up
+      guid: adf9cb1f7101b440b54c617f39183219
+      id: 3762322931
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: ShieldExplosionImpact_Up
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact_Up
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -406,10 +420,6 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585997007144979139
     List: []
-  ExpandedItems:
-  - /Controle Alt unity_WwiseProject
-  - /Controle Alt unity_WwiseProject/Events
-  - /Controle Alt unity_WwiseProject/Events/Default Work Unit
-  - /Controle Alt unity_WwiseProject/Events/Default Work Unit/SpaceShip_Ext
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

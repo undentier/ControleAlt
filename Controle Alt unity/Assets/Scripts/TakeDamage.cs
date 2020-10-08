@@ -12,7 +12,13 @@ public class TakeDamage : MonoBehaviour
     public int bulletDamage;
 
     public GameObject fxExplosion;
-    
+
+
+
+    [Space(10)]
+    [Header("Audio")]
+    public AK.Wwise.Event laserDamageAudio;
+    public AK.Wwise.Event explosionDamageAudio;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +26,8 @@ public class TakeDamage : MonoBehaviour
         if (other.tag == "Asteroid")
         {
             PlayerManager.Instance.hp -= AsteroidDmg;
+            explosionDamageAudio.Post(gameObject);
+
             Destroy(other.gameObject);
         }
 
@@ -29,6 +37,7 @@ public class TakeDamage : MonoBehaviour
             
 
             GameObject explosion = Instantiate(fxExplosion, transform.position, transform.rotation);
+            explosionDamageAudio.Post(gameObject);
             Destroy(explosion, 3f);
       
             Destroy(other.gameObject);
@@ -37,6 +46,7 @@ public class TakeDamage : MonoBehaviour
         if (other.tag == "Bullet")
         {
             PlayerManager.Instance.hp -= bulletDamage;
+            laserDamageAudio.Post(gameObject);
 
             Destroy(other.gameObject);
         }
