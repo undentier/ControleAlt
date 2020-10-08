@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventFeedBack : MonoBehaviour
+
+//pour appeler les fonctions des problèmes il faut juste une ref pour le scrip (EventManager eventManager) et puis dans la fonction Start: eventManager = EventManager.instance; Enfin il y a juste à eventManager.LaFonctionQueTuVeux
+
+public class EventManager : MonoBehaviour
 {
-    public static EventFeedBack instance;
+    public static EventManager instance;
 
     #region Bools
     [Header("Events bools")]
@@ -49,7 +52,7 @@ public class EventFeedBack : MonoBehaviour
 
     private void Update()
     {
-        Picto(); //on vérifie h24 si y'a un bail
+        Picto(); 
 
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -125,45 +128,56 @@ public class EventFeedBack : MonoBehaviour
 
     }
 
+
+
+    #region function pour problèmes
     public void PanneDeCourant()
     {
         //effet
         Instantiate(popUp); //warning pop-up
-        panneCourantActive = true;    
+        panneCourantActive = true;
+        //play sound
     }
 
     public void PanneDeReacteur()
     {
         //effet
         Instantiate(popUp); //warning pop-up
-        //bool set true
+        panneReacteurActive = true;
+        //play sound
     }
 
     public void Fuite()
     {
         //effet
         Instantiate(popUp); //warning pop-up
-        //bool set true
+        fuiteActive = true;
+        //play sound
     }
 
     public void Enrayement()
     {
         //effet
         Instantiate(popUp); //warning pop-up
-        //bool set true
+        enrayementActive = true;
+        //play sound
     }
 
     public void SignalVideo()
     {
         //effet
         Instantiate(popUp); //warning pop-up
-        //bool set true
+        signalVideoActive = true;
+        //play sound
     }
 
     public void Surchauffe()
     {
         //effet
         Instantiate(popUp); //warning pop-up
-        //bool set true
+        surchauffeActive = true;
+        //play sound
     }
+
+    #endregion
 }
