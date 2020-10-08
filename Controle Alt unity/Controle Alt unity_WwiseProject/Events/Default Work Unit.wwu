@@ -206,7 +206,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="ShieldExplosionImpact" ID="{1FCBF9AD-0171-40B4-B54C-617F39183219}">
+						<Event Name="ShieldExplosionImpact_Up" ID="{1FCBF9AD-0171-40B4-B54C-617F39183219}">
 							<ChildrenList>
 								<Action Name="" ID="{C85EA6AE-30C3-4A43-A004-C3349D3A1C3D}" ShortID="1072618301">
 									<ReferenceList>
@@ -279,6 +279,24 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MetalImpacts" ID="{1EE0AC23-6D2C-488D-8809-BF71650CC33A}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ShieldExplosionImpact_Down" ID="{CFBF509A-EE3B-45DA-A219-93084D2AF25F}">
+							<ChildrenList>
+								<Action Name="" ID="{AFD7DAB4-3E4B-4711-B9CE-109F19093A01}" ShortID="791066929">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KamikazExplosion_Down" ID="{36EB43A8-B8D1-4043-81FC-5C807FB1BB62}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C6854363-03AA-4989-BC69-A2AFC4B8E1C9}" ShortID="71617798">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShieldImpact_Down" ID="{3FFCE62C-BB05-4E52-94D7-604083DF002B}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

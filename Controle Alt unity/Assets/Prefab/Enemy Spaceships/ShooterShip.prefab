@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 924260096348295641}
   - component: {fileID: 924260096348295638}
   - component: {fileID: 4006585110535899736}
+  - component: {fileID: 6905783694599510720}
   m_Layer: 0
   m_Name: ShooterShip
   m_TagString: Untagged
@@ -132,6 +133,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.348537, y: 7.3715467, z: 15.655343}
   m_Center: {x: 0.0000021457677, y: -0.00000059604645, z: 0}
+--- !u!114 &6905783694599510720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924695894745405219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1a917d072b4774da80480459b64557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 3
+  fx: {fileID: 1290715649332758, guid: 587eaecaa621be74486f351c78b4f0a8, type: 3}
 --- !u!1 &3991796527961287506
 GameObject:
   m_ObjectHideFlags: 0

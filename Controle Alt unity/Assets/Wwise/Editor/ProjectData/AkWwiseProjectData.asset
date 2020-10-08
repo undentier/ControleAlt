@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4f6f1b2064c3f947be10063efc5cb216
     GuidInternal: 
-    m_lastTime: -8585995337154882447
+    m_lastTime: -8585995272712289678
     List:
     - name: Ambients
       guid: cded2e4e5f1e8d40a473afe3110e83d3
@@ -188,6 +188,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: ShieldExplosionImpact
+      guid: adf9cb1f7101b440b54c617f39183219
+      id: 2298054145
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: ShieldExplosionImpact
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\ShieldExplosionImpact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ShieldImpact_Down
       guid: 15826d0ec3d2bb4ba0c413edab0682ef
       id: 2822200171
@@ -216,6 +230,34 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Spaceship_Damages_Down
+      guid: e395b4ae391d87468021f2e56171b493
+      id: 411634723
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: Spaceship_Damages_Down
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\Spaceship_Damages_Down
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Spaceship_Damages_Top
+      guid: ca2e0a1f0f9aa2498d446fd1b0eab28f
+      id: 2454832008
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: Spaceship_Damages_Top
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\Spaceship_Damages_Top
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SpaceShip_Ext
       guid: 632cc35faa3ae24d9a66bf4a6c3eaf9a
       id: 3898855771
@@ -237,6 +279,34 @@ MonoBehaviour:
       - ElementName: SpaceShip_Int
         ObjectType: 4
       Path: Default Work Unit\SpaceShip_Int
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpaceShipe_ExplosionDamages_Down
+      guid: 2b259a062fbd604d92c0a3a57aef2ee1
+      id: 2338192817
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: SpaceShipe_ExplosionDamages_Down
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\SpaceShipe_ExplosionDamages_Down
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpaceShipe_ExplosionDamages_Up
+      guid: c7c10191786c1f41aa03da23426da4e3
+      id: 1059715286
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Ext
+        ObjectType: 4
+      - ElementName: SpaceShipe_ExplosionDamages_Up
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Ext\SpaceShipe_ExplosionDamages_Up
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
