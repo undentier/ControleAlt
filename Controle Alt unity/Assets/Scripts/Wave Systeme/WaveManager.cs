@@ -61,8 +61,8 @@ namespace Manager
         [Header("nombre des emeregency")]
         public int emergencyIndex;
 
-        [Header("Numéro de la vague actuel")]
-        public bool emergencyState;
+        [Header("etat de l'emergency")]
+        public bool isInEmergency;
 
         #endregion
 
@@ -151,10 +151,10 @@ namespace Manager
             {
                 if (waveActive)
                 {
-                    emergencyState = true;
+                    isInEmergency = true;
                     emergencyIndex = Random.Range(0, emergencyList.Count);
                     yield return new WaitForSeconds(timeBtwEmergency);
-                    emergencyState = false;
+                    
                 }
             }
             
