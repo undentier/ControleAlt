@@ -450,6 +450,14 @@ MonoBehaviour:
   AsteroidDmg: 1
   KamikazeDmg: 2
   bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1518547721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2084721599662110209, guid: 9020427ab5064064bb353006e67d2f05,
@@ -687,6 +695,14 @@ MonoBehaviour:
   AsteroidDmg: 1
   KamikazeDmg: 2
   bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1804868764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4199086728616412903, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
@@ -721,6 +737,14 @@ MonoBehaviour:
   AsteroidDmg: 1
   KamikazeDmg: 2
   bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1948719517 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1251918485771260, guid: 41a827e1c8551f143a8856c9331983b7,
@@ -742,6 +766,15 @@ MonoBehaviour:
   AsteroidDmg: 1
   KamikazeDmg: 2
   bulletDamage: 0
+  fxExplosion: {fileID: 0}
+  laserDamageAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  explosionDamageAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &2005614011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4199086727451836611, guid: 68cb68b7a8f7f7642b61b4ee2b3b66ac,
@@ -776,6 +809,14 @@ MonoBehaviour:
   AsteroidDmg: 1
   KamikazeDmg: 2
   bulletDamage: 0
+  laserShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  KamikazShieldAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &2078713744
 GameObject:
   m_ObjectHideFlags: 0
