@@ -606,6 +606,11 @@ PrefabInstance:
       propertyPath: pins.Array.data[1].prevSendValue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
+        type: 3}
+      propertyPath: debugLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
 --- !u!1 &365550295
