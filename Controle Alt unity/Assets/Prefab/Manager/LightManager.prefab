@@ -47,3 +47,4 @@ MonoBehaviour:
   greenLed: 11
   blueLed: 13
   getHit: 0
+  finishWave: 0

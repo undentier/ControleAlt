@@ -8,11 +8,15 @@ public class LightManager : MonoBehaviour
     UduinoManager u;
     public static LightManager Instance;
 
+    [Header ("Pins")]
     public int redLed;
     public int greenLed;
     public int blueLed;
 
+    [Space]
     public bool getHit;
+    public bool finishWave;
+    public bool powerOff;
 
     void Start()
     {
@@ -30,6 +34,17 @@ public class LightManager : MonoBehaviour
         {
             getHit = false;
             StartCoroutine(GetHit());
+        }
+
+        if (finishWave == true)
+        {
+            finishWave = false;
+            StartCoroutine(FinishWave());
+        }
+
+        if (powerOff == true)
+        {
+            //PowerOff();
         }
     }
 
@@ -52,6 +67,7 @@ public class LightManager : MonoBehaviour
         UduinoManager.Instance.digitalWrite(blueLed, blueValue);
     }
 
+
     IEnumerator GetHit()
     {
         for (int i = 0; i < 5; i++)
@@ -63,6 +79,16 @@ public class LightManager : MonoBehaviour
         }
     }
 
+    IEnumerator FinishWave()
+    {
+        ColorRGB(0, 255, 0);
+        yield return new WaitForSeconds(5f);
+        ColorRGB(0, 0, 0);
+    }
 
+    void PowerOff()
+    {
+       // if ()
+    }
     
 }
