@@ -48,24 +48,27 @@ public class Emergency : MonoBehaviour
                 default:
                     break;
             }
+            WaveManager.Instance.isInEmergency = false;
         }
 
         if (Input.GetButton("Electrical1") && Input.GetButton("Electrical2"))
         {
             panel.color = baseColor;
         }
+        if (EventManager.instance.fuiteActive)
+            Breach();
     }
 
 
     void Breach()
     {
-        
         if (canTakeDamage)
         {
             PlayerManager.Instance.shield--;
+            PlayerManager.Instance.hp--;
             StartCoroutine(BreachDamageCd());
         }
-        WaveManager.Instance.isInEmergency = false;
+        
     }
 
     IEnumerator BreachDamageCd()
@@ -78,22 +81,22 @@ public class Emergency : MonoBehaviour
     void Electrical()
     {
         panel.color = myColor;
-        WaveManager.Instance.isInEmergency = false;
+        
     }
 
     void TurretBroken()
     {
-        WaveManager.Instance.isInEmergency = false;
+        
     }
 
     void Overheat()
     {
-        WaveManager.Instance.isInEmergency = false;
+        
     }
 
     void VideoSignal()
     {
-        WaveManager.Instance.isInEmergency = false;
+        
     }
 
     

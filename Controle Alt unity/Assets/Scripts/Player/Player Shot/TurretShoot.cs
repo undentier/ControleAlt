@@ -6,11 +6,18 @@ public class TurretShoot : MonoBehaviour
 {
     public string input;
     public float fireRate;
+    public float cooldownSpeed;
+    public int turretIndex;
 
     public GameObject objectBullet;
 
     private bool canShoot;
     private bool stopCoroutine;
+    private bool stopCd;
+    bool surchauffe;
+    int heat;
+    public int maxHeat;
+    bool fullyCooled;
 
 
     [Space(10)]
@@ -25,28 +32,63 @@ public class TurretShoot : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButton(input))
+        
+        
+
+        
+        
+        if (heat <= maxHeat  && fullyCooled)
         {
-            canShoot = true;
-            
+            if (Input.GetButton(input))
+            {
+                canShoot = true;
+
+            }
+            if (canShoot == true)
+            {
+                if (stopCoroutine == false)
+                {
+                    StartCoroutine(Fire());
+                }
+            }
+            if (canShoot == false)
+            {
+                if (stopCd == false)
+                {
+                    StartCoroutine(CoolingDown());
+                } 
+            }
         }
         else
         {
-            canShoot = false;
-        }
-
-        if (canShoot == true)
-        {
-            if (stopCoroutine == false)
+            fullyCooled = false;
+            if (heat == 0)
             {
-                StartCoroutine(Fire());
+                fullyCooled = true;
             }
+            StartCoroutine(CoolingDown());
+
+            canShoot = false;
+            
         }
+        
     }
 
+    IEnumerator CoolingDown()
+    {
+        if (heat > 0)
+        {
+            heat--;
+            stopCd = true;
+            yield return new WaitForSeconds(cooldownSpeed);
+            stopCd = false;
+        }
+        
+    }
 
     IEnumerator Fire()
     {
+        heat++;
         stopCoroutine = true;
         GameObject bullet = Instantiate(objectBullet, gameObject.transform.position, gameObject.transform.rotation);
         TurretShootAudio.Post(gameObject);

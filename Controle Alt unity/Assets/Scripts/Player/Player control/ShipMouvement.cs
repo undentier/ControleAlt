@@ -17,6 +17,7 @@ namespace PlayerMouvement
         public float speed;
 
         private Rigidbody shipRb;
+        bool canMoove;
         #endregion
 
         void Start()
@@ -26,7 +27,12 @@ namespace PlayerMouvement
 
         void Update()
         {
-            Mouvement();
+            canMoove = !EventManager.instance.panneReacteurActive;
+            if (canMoove)
+            {
+                Mouvement();
+            }
+            
         }
 
 
