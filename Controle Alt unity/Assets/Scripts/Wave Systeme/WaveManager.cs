@@ -92,7 +92,7 @@ namespace Manager
 
         void StartGame()
         {
-            if (Input.GetButtonDown("Start"))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (start == false)
                 {
