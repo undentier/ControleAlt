@@ -33,8 +33,6 @@ public class EventManager : MonoBehaviour
     public GameObject surchauffePicto;
     #endregion
 
-
-    System.Random random = new System.Random();
     int funcToChoose;
     
 
@@ -54,11 +52,6 @@ private void Awake()
         }
     }
 
-
-    private void Start()
-    {
-        int funcToChoose = random.Next(5);
-    }
 
     private void Update()
     {
@@ -194,6 +187,8 @@ private void Awake()
 
     public void RandomEvent()
     {
+        funcToChoose = Random.Range(0, 6);
+
         switch (funcToChoose)
         {
             case 0:
