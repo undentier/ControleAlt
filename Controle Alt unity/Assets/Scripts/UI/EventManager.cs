@@ -33,7 +33,10 @@ public class EventManager : MonoBehaviour
     public GameObject surchauffePicto;
     #endregion
 
-    private void Awake()
+    int funcToChoose;
+    
+
+private void Awake()
     {
         if (instance != null)
         {
@@ -52,12 +55,12 @@ public class EventManager : MonoBehaviour
 
     private void Update()
     {
-        Picto(); 
+        Picto();
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            PanneDeCourant();
-        }
+            RandomEvent();
+        }      
     }
 
 
@@ -180,4 +183,39 @@ public class EventManager : MonoBehaviour
     }
 
     #endregion
+
+
+    public void RandomEvent()
+    {
+        funcToChoose = Random.Range(0, 6);
+
+        switch (funcToChoose)
+        {
+            case 0:
+                PanneDeCourant();
+                break;
+
+            case 1:
+                PanneDeReacteur();
+                break;
+
+            case 2:
+                Fuite();
+                break;
+
+            case 3:
+                Enrayement();
+                break;
+
+            case 4:
+                SignalVideo();
+                break;
+
+            case 5:
+                Surchauffe();
+                break;
+        }
+    }
+
+    
 }

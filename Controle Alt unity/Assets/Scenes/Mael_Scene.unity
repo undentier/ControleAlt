@@ -256,12 +256,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f843bfa445e9624c9a6abdda24fa440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panneCourantActive: 1
-  panneReacteurActive: 1
-  fuiteActive: 1
-  enrayementActive: 1
-  signalVideoActive: 1
-  surchauffeActive: 1
+  panneCourantActive: 0
+  panneReacteurActive: 0
+  fuiteActive: 0
+  enrayementActive: 0
+  signalVideoActive: 0
+  surchauffeActive: 0
   popUp: {fileID: 9081536150082770728, guid: c3c23346a5300f74088f650b24653f68, type: 3}
   panneDeCourantPicto: {fileID: 82755349}
   panneReacteurPicto: {fileID: 727638422}
