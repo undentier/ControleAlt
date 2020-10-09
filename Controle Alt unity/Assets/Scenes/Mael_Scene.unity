@@ -213,62 +213,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!1 &219321696
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 219321697}
-  - component: {fileID: 219321698}
-  m_Layer: 0
-  m_Name: EventManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &219321697
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219321696}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &219321698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219321696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f843bfa445e9624c9a6abdda24fa440, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panneCourantActive: 0
-  panneReacteurActive: 0
-  fuiteActive: 0
-  enrayementActive: 0
-  signalVideoActive: 0
-  surchauffeActive: 0
-  popUp: {fileID: 9081536150082770728, guid: c3c23346a5300f74088f650b24653f68, type: 3}
-  panneDeCourantPicto: {fileID: 82755349}
-  panneReacteurPicto: {fileID: 727638422}
-  fuitePicto: {fileID: 2012916086}
-  enrayementPicto: {fileID: 590307651}
-  signalVideoPicto: {fileID: 1213505697}
-  surchauffePicto: {fileID: 1296124037}
 --- !u!1 &286386462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,3 +1702,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012916086}
   m_CullTransparentMesh: 0
+--- !u!1001 &1906956490392259512
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1906956490575863512, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_Name
+      value: EventManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863513, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: panneDeCourantPicto
+      value: 
+      objectReference: {fileID: 82755349}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: panneReacteurPicto
+      value: 
+      objectReference: {fileID: 727638422}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: fuitePicto
+      value: 
+      objectReference: {fileID: 2012916086}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: enrayementPicto
+      value: 
+      objectReference: {fileID: 590307651}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: signalVideoPicto
+      value: 
+      objectReference: {fileID: 1213505697}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: surchauffePicto
+      value: 
+      objectReference: {fileID: 1296124037}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a547c3f38d30b344d92d70d43c941474, type: 3}

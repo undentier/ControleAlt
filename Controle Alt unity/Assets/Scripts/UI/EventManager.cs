@@ -57,7 +57,7 @@ private void Awake()
     private void Update()
     {
         Picto();
-        Inputs();
+        //Inputs();
         if (Input.GetKeyDown(KeyCode.F))
         {
             RandomEvent();
@@ -75,7 +75,7 @@ private void Awake()
         {
             fuiteActive = false;
         }
-        if (Input.GetButton("Reacteur1") && Input.GetButton("Reacteur2"))
+        if (Input.GetButton("Reacteur1"))
         {
             panneReacteurActive = false;
         }

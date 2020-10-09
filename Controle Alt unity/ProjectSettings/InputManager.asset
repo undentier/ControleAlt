@@ -294,6 +294,7 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
+<<<<<<< Updated upstream
     m_Name: Surchauffe1
     descriptiveName: 
     descriptiveNegativeName: 
@@ -390,10 +391,13 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
+=======
+>>>>>>> Stashed changes
     m_Name: Submit
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
+<<<<<<< Updated upstream
     positiveButton: enter
     altNegativeButton: 
     altPositiveButton: 
@@ -411,6 +415,9 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
+=======
+    positiveButton: (
+>>>>>>> Stashed changes
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
