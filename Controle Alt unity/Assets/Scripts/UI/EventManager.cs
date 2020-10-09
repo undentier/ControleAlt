@@ -17,6 +17,7 @@ public class EventManager : MonoBehaviour
     public bool enrayementActive = false;
     public bool signalVideoActive = false;
     public bool surchauffeActive = false;
+    bool canTakeDamage = true;
     #endregion 
 
     [Space]
@@ -52,15 +53,35 @@ public class EventManager : MonoBehaviour
 
     private void Update()
     {
-        Picto(); 
-
+        Picto();
+        Inputs();
         if (Input.GetKeyDown(KeyCode.F))
         {
             PanneDeCourant();
         }
     }
 
+    public void Inputs()
+    {
+        
+        if (Input.GetButton("Electrical1") && Input.GetButton("Electrical2"))
+        {
+            panneCourantActive = false;
+        }
+        if (Input.GetButton("Fuite1") && Input.GetButton("Fuite2"))
+        {
+            fuiteActive = false;
+        }
+        if (Input.GetButton("Reacteur1") && Input.GetButton("Reacteur2"))
+        {
+            panneReacteurActive = false;
+        }
+        if (Input.GetButton("Enrayement1") && Input.GetButton("Enrayement2"))
+        {
+            panneReacteurActive = false;
+        }
 
+    }
     public void Picto()
     {
         //check les bools pour savoir si on nique ou pas tel picto

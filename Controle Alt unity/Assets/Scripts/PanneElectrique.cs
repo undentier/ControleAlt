@@ -29,20 +29,20 @@ namespace Panne
             newColor = panel.color;
             newColor.a = Opacity;
 
-            IsActive = GetComponent<RandomEventGeneration>().isActive;
-            baseActivityState = GetComponent<RandomEventGeneration>().isActive;
+            
+            baseActivityState = EventManager.instance.panneCourantActive;
         }
 
         // Update is called once per frame
         void Update()
         {
-            IsActive = GetComponent<RandomEventGeneration>().isActive;
+            IsActive = EventManager.instance.panneCourantActive; ;
 
             if (IsActive != baseActivityState)
             {
                 lightsOff();
             }
-            if (Input.GetKey(inputPlayer1) && Input.GetKey(inputPlayer2))
+            if (IsActive == baseActivityState)
             {
                 FixLights();
             }
