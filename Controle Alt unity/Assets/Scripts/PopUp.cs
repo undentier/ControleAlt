@@ -19,7 +19,7 @@ public class PopUp : MonoBehaviour
 
         popUpW.enabled = defaultState;
         StartBlink();
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 3);
     }
 
     public void StartBlink()
