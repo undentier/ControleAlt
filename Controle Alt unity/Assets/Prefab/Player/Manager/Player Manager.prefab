@@ -48,4 +48,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  Hp: 0
+  hp: 10
+  maxHp: 10
+  shield: 10
+  maxShield: 10

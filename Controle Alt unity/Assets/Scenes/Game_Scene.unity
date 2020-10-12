@@ -827,11 +827,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231200588310997449, guid: 1c20642e0083b1e46b592d221084d2b9,
         type: 3}
-      propertyPath: turret.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231200588310997449, guid: 1c20642e0083b1e46b592d221084d2b9,
-        type: 3}
       propertyPath: turret.Array.data[0]
       value: 
       objectReference: {fileID: 466119439}
@@ -1275,6 +1270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wave Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989917630003107591, guid: 4a4f4bdd22bf24d469dd155f0ae99c6d,
+        type: 3}
+      propertyPath: startButton
+      value: Start
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a4f4bdd22bf24d469dd155f0ae99c6d, type: 3}

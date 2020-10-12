@@ -17,6 +17,8 @@ namespace Manager
 
         #region Variables
 
+        public string startButton;
+
         [Header ("Nombre d'ennemis à spawn")]
         public int numberKamikaze;
         public int numberShoter;
@@ -92,7 +94,7 @@ namespace Manager
 
         void StartGame()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetButtonDown(startButton))
             {
                 if (start == false)
                 {
