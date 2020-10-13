@@ -13,6 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALARM_COMMUNICATIONS = 1187211444U;
+        static const AkUniqueID ALARM_ENGINE = 1288870261U;
+        static const AkUniqueID ALARM_GAZ = 3840799523U;
+        static const AkUniqueID ALARM_INTEGRITY = 1462549256U;
+        static const AkUniqueID ALARM_SHIELD = 144264076U;
         static const AkUniqueID ENGINE_START = 2862969430U;
         static const AkUniqueID LASERSHOOT_DOWNLEFT = 3840785261U;
         static const AkUniqueID LASERSHOOT_DOWNRIGHT = 2836862680U;

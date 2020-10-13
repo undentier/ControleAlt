@@ -44,6 +44,282 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Alarms" ID="{76130D04-C9D5-4399-82FB-0F85F59F7C4C}" ShortID="346208482">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Alarm_1" ID="{4D10B902-D699-448D-9ACC-D92897C2200B}" ShortID="357480944">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_1" ID="{901C5E35-0F7F-43E5-8196-071AAB073411}">
+											<Language>SFX</Language>
+											<AudioFile>Alarm_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="362360375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_1" ID="{901C5E35-0F7F-43E5-8196-071AAB073411}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_2" ID="{F52CC7C6-33EF-46B9-B231-D34A86C36ED7}" ShortID="942771904">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_2" ID="{2421C990-1EA7-4DC9-9D68-92B8B48ED4FF}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="1.70576134655841"/>
+												<Property Name="LoopEnd" Type="Real64" Value="19.0065317481564"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.524849645094894"/>
+												<Property Name="TrimEnd" Type="Real64" Value="19.9906248327094"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Alarm_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="406979123"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_2" ID="{2421C990-1EA7-4DC9-9D68-92B8B48ED4FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_3" ID="{65D46DA7-7EF6-4FA0-9F6B-83E5CD7A663C}" ShortID="239794677">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_3" ID="{32D04ACF-8132-4677-BD67-0358E734C08F}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.845275601921778"/>
+												<Property Name="LoopEnd" Type="Real64" Value="19.3578685375178"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="19.7583171949216"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Alarm_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="911097053"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_3" ID="{32D04ACF-8132-4677-BD67-0358E734C08F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_4" ID="{3F119E47-CB9C-48A2-A104-B1872F91343C}" ShortID="191101708">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_4" ID="{D6E3542B-2459-46D5-B1E3-8D3DFBC38A20}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0439513935235597"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="24.8325373408113"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Alarm_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="83717087"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_4" ID="{D6E3542B-2459-46D5-B1E3-8D3DFBC38A20}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_5" ID="{E6E49F4C-7FAE-4EA5-A4C5-E8C36C73124F}" ShortID="647643500">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_5" ID="{E929E6FA-AE8D-42A6-BFF1-BE81E6904692}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.122599513701063"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.54524785243989"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Alarm_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="578259461"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_5" ID="{E929E6FA-AE8D-42A6-BFF1-BE81E6904692}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_6" ID="{1370F3F0-1F46-49C0-A2FC-F44425B6E232}" ShortID="877968004">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_6" ID="{85CF83ED-104A-4B92-9795-EAE53CB700C7}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0969614122183583"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0969614122183583"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Alarm_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1028790693"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_6" ID="{85CF83ED-104A-4B92-9795-EAE53CB700C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_7" ID="{68B29636-EE0C-4FD8-8A22-553849721531}" ShortID="279177228">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_7" ID="{3CDDF777-2689-4E84-8AB5-E59E62EC2ACE}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0969614122183584"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.9372472982308"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Alarm_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="104969788"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_7" ID="{3CDDF777-2689-4E84-8AB5-E59E62EC2ACE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_8" ID="{E840D5AC-9C1C-46F7-ACD0-CB66D342B5C6}" ShortID="846434522">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_8" ID="{608FDEF6-68DB-43D7-92DB-3929B1856D12}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0602712745601945"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Alarm_8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="642038927"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_8" ID="{608FDEF6-68DB-43D7-92DB-3929B1856D12}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Alarm_9" ID="{378902BF-3185-49EB-BD20-A6E01F571868}" ShortID="162459003">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{361FD8D2-7C08-4D38-B20F-9C7802ABB815}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Alarm_9" ID="{961C2DF6-0352-48C2-AFBC-6FBE31DE805D}">
+											<Language>SFX</Language>
+											<AudioFile>Alarm_9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="730746701"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Alarm_9" ID="{961C2DF6-0352-48C2-AFBC-6FBE31DE805D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="SpaceShip_Ext" ID="{2ABFF7D3-6D74-4CF4-8A5E-A073D8C52090}" ShortID="480905835">
 					<PropertyList>

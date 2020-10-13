@@ -30,6 +30,49 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Alarms" ID="{AA44B607-5A81-4956-8CB2-48D5C40C0602}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Alarm_1" ID="{4D10B902-D699-448D-9ACC-D92897C2200B}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_4" ID="{3F119E47-CB9C-48A2-A104-B1872F91343C}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_7" ID="{68B29636-EE0C-4FD8-8A22-553849721531}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_2" ID="{F52CC7C6-33EF-46B9-B231-D34A86C36ED7}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_5" ID="{E6E49F4C-7FAE-4EA5-A4C5-E8C36C73124F}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_8" ID="{E840D5AC-9C1C-46F7-ACD0-CB66D342B5C6}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_3" ID="{65D46DA7-7EF6-4FA0-9F6B-83E5CD7A663C}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_6" ID="{1370F3F0-1F46-49C0-A2FC-F44425B6E232}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Alarm_9" ID="{378902BF-3185-49EB-BD20-A6E01F571868}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>
