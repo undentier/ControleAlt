@@ -14,8 +14,7 @@ public class shieldBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ShieldBar.maxValue = PlayerManager.Instance.maxShield;
-        
+        ShieldBar.maxValue = PlayerManager.Instance.maxShield;      
     }
 
     // Update is called once per frame
