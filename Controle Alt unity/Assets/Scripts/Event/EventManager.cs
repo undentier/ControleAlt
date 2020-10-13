@@ -40,7 +40,13 @@ public class EventManager : MonoBehaviour
 
     int funcToChoose;
     int escudo;
-    
+
+    [Space(10)]
+    [Header("Audio")]
+    public AK.Wwise.Event alarmGazAudio;
+    public AK.Wwise.Event alarmComAudio;
+    public AK.Wwise.Event alarmEngineAudio;
+
 
     private void Awake()
     {
@@ -69,8 +75,7 @@ public class EventManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            //RandomEvent();
-            fuiteActive = true;
+            RandomEvent();
         }
 
 
@@ -178,7 +183,7 @@ public class EventManager : MonoBehaviour
         //effet
         Instantiate(popUp); //warning pop-up
         panneReacteurActive = true;
-        //play sound
+        alarmEngineAudio.Post(gameObject);
     }
 
     public void Fuite()
@@ -186,7 +191,7 @@ public class EventManager : MonoBehaviour
         //effet (il dans le update hihi)
         Instantiate(popUp); //warning pop-up
         fuiteActive = true;
-        //play sound
+        alarmGazAudio.Post(gameObject);
     }
 
     public void Enrayement()
@@ -202,7 +207,7 @@ public class EventManager : MonoBehaviour
         //effet
         Instantiate(popUp); //warning pop-up
         signalVideoActive = true;
-        //play sound
+        alarmComAudio.Post(gameObject);
     }
 
     public void Surchauffe()

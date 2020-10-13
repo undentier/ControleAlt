@@ -45,7 +45,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="N6GOd+68AUyXCPRECyd7V92wqxZhXt5Bs3/eXBYWCNc="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="ji4I4na6aE+f1WJwjHQRZg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="epxm2WAyjUOMEuoTs3Ca2AGEP9r/////Ha2YEht8NUW1j06ZH/NjrQGEP9r/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="Ha2YEht8NUW1j06ZH/NjrQGEJUL/////epxm2WAyjUOMEuoTs3Ca2AGEJUL/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -75,8 +75,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="0tgfNgh8OE2yD5x4Aqu4FQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="bnedE+gO10SMULjVhhvkhSAHudipwjtFhjcgIMgxg1iqxXJC1/VqRqzMs/L1+jxCzSZQO2H9Q0mZrq7GPRHNsNP3vyp0bfRMil6gc9jFIJA="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="T28bIGTD+Ue+EAY+/FyyFu69HnW3xCVMtgXB03Ex8FdjLMNfqjriTZpmv0psPq+aly0WCOJjNU+3SpXRbQbmBA=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="BA0TdtXJmUOC+w+F9Z98TG53nRPoDtdEjFC41YYb5IUgB7nYqcI7RYY3ICDIMYNYqsVyQtf1akaszLPy9fo8Qs0mUDth/UNJma6uxj0RzbDT978qdG30TIpeoHPYxSCQDzv+WNxWBk6dGH6c2l5H7w=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="T28bIGTD+Ue+EAY+/FyyFu69HnW3xCVMtgXB03Ex8FeXLRYI4mM1T7dKldFtBuYE"/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="JNgwXirAVk+YnHhgUKvBHQ=="/>
@@ -114,7 +114,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{9F19266E-D812-4DC0-BD52-A2839C798102}"/>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{AA44B607-5A81-4956-8CB2-48D5C40C0602}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>
