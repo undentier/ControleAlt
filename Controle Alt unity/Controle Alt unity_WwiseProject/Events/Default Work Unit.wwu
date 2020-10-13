@@ -20,6 +20,13 @@
 						<Property Name="Color" Type="int16" Value="14"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
+					<ChildrenList>
+						<Event Name="Alarm_Engine" ID="{AB9885FD-87DF-409D-9197-A501D92E8BE8}"/>
+						<Event Name="Alarm_Communications" ID="{50868F76-86C9-4E3A-99CE-78E226128199}"/>
+						<Event Name="Alarm_Gaz" ID="{8F8A2DF1-6E02-437F-AC5E-45342ED22908}"/>
+						<Event Name="Alarm_Shield" ID="{489F84F2-27C3-4508-85AF-617B519A1C67}"/>
+						<Event Name="Alarm_Integrity" ID="{15D76955-5950-4334-9348-FEE46FE1308A}"/>
+					</ChildrenList>
 				</Folder>
 				<Folder Name="SpaceShip_Ext" ID="{5FC32C63-3AAA-4DE2-9A66-BF4A6C3EAF9A}" ShortID="221301100">
 					<PropertyList>

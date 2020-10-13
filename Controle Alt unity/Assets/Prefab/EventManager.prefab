@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906956490575863512}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -56,3 +56,18 @@ MonoBehaviour:
   enrayementPicto: {fileID: 0}
   signalVideoPicto: {fileID: 0}
   surchauffePicto: {fileID: 0}
+  alarmGazAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8144f659dc07785459e511f1f1af3a45,
+      type: 2}
+  alarmComAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 15b77673cd7c49f49b131d8d790c404c,
+      type: 2}
+  alarmEngineAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8f2e97fdd53e478458d816057ecb337e,
+      type: 2}
