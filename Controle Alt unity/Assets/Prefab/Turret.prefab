@@ -111,7 +111,7 @@ Transform:
   - {fileID: 2102194023642426453}
   - {fileID: 2104260831221820217}
   m_Father: {fileID: 2104216152628704121}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2110099498947722807
 MeshFilter:
@@ -191,6 +191,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5285551501956042154}
   - {fileID: 2102453284884604777}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -276,8 +277,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: Fire
   fireRate: 0.1
+  cooldownSpeed: 0
+  turretIndex: 0
   objectBullet: {fileID: 2867320030815606381, guid: 708dd43af2fd97c4aa06fa5ce1e9b7fa,
     type: 3}
+  shootPoint: {fileID: 5285551501956042154}
+  maxHeat: 0
   TurretShootAudio:
     idInternal: 0
     valueGuidInternal: 
@@ -361,3 +366,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &5077589074857969849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5285551501956042154}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5285551501956042154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077589074857969849}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.068, z: 2.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2104216152628704121}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

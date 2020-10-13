@@ -875,6 +875,8 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8137607f880759441a36cd4065c881af,
       type: 2}
+  stars: {fileID: 0}
+  hyperespace: {fileID: 0}
 --- !u!1 &8572959929624709710
 GameObject:
   m_ObjectHideFlags: 0

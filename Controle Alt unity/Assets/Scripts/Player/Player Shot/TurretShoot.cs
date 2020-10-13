@@ -11,6 +11,8 @@ public class TurretShoot : MonoBehaviour
 
     public GameObject objectBullet;
 
+    public Transform shootPoint;
+
     private bool canShoot;
     private bool stopCoroutine;
     private bool stopCd;
@@ -90,7 +92,7 @@ public class TurretShoot : MonoBehaviour
     {
         heat++;
         stopCoroutine = true;
-        GameObject bullet = Instantiate(objectBullet, gameObject.transform.position, gameObject.transform.rotation);
+        GameObject bullet = Instantiate(objectBullet, shootPoint.transform.position, shootPoint.transform.rotation);
         TurretShootAudio.Post(gameObject);
         yield return new WaitForSeconds(fireRate);
         stopCoroutine = false;
