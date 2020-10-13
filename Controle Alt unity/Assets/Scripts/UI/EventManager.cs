@@ -35,7 +35,13 @@ public class EventManager : MonoBehaviour
     #endregion
 
     int funcToChoose;
-    
+
+
+    [Space(10)]
+    [Header("Audio")]
+    public AK.Wwise.Event alarmGazAudio;
+    public AK.Wwise.Event alarmComAudio;
+    public AK.Wwise.Event alarmEngineAudio;
 
 private void Awake()
     {
@@ -160,7 +166,7 @@ private void Awake()
         //effet
         Instantiate(popUp); //warning pop-up
         panneCourantActive = true;
-        //play sound
+        //Stop All sound effect
     }
 
     public void PanneDeReacteur()
@@ -168,7 +174,7 @@ private void Awake()
         //effet
         Instantiate(popUp); //warning pop-up
         panneReacteurActive = true;
-        //play sound
+        alarmEngineAudio.Post(gameObject);
     }
 
     public void Fuite()
@@ -176,7 +182,7 @@ private void Awake()
         //effet
         Instantiate(popUp); //warning pop-up
         fuiteActive = true;
-        //play sound
+        alarmGazAudio.Post(gameObject);
     }
 
     public void Enrayement()
@@ -192,7 +198,7 @@ private void Awake()
         //effet
         Instantiate(popUp); //warning pop-up
         signalVideoActive = true;
-        //play sound
+        alarmComAudio.Post(gameObject);
     }
 
     public void Surchauffe()
