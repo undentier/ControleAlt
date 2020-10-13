@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ManagerPlayer;
 
 
 //pour appeler les fonctions des problèmes il faut juste une ref pour le scrip (EventManager eventManager) et puis dans la fonction Start: eventManager = EventManager.instance; Enfin il y a juste à eventManager.LaFonctionQueTuVeux
@@ -8,6 +9,10 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     public static EventManager instance;
+
+    [Header("Fuite refs")]
+    float timer = 0f;
+    public float delayAmount;
 
     #region Bools
     [Header("Events bools")]
@@ -34,9 +39,10 @@ public class EventManager : MonoBehaviour
     #endregion
 
     int funcToChoose;
+    int escudo;
     
 
-private void Awake()
+    private void Awake()
     {
         if (instance != null)
         {
@@ -52,6 +58,10 @@ private void Awake()
         }
     }
 
+    private void Start()
+    {
+
+    }
 
     private void Update()
     {
@@ -59,8 +69,29 @@ private void Awake()
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            RandomEvent();
-        }      
+            //RandomEvent();
+            fuiteActive = true;
+        }
+
+
+        //effet fuite
+        timer += Time.deltaTime;
+        if (timer > delayAmount && fuiteActive && PlayerManager.Instance.shield != 0)
+        {
+            timer = 0f;
+            PlayerManager.Instance.shield--;
+
+
+        }
+        else if(timer > delayAmount && fuiteActive && PlayerManager.Instance.shield == 0)
+        {
+            timer = 0f;
+            PlayerManager.Instance.hp--;
+            if (PlayerManager.Instance.hp == 0)
+            {
+                Debug.Log("Ouuuuhlala c'est la défaite");
+            }
+        }  
     }
 
 
@@ -136,7 +167,7 @@ private void Awake()
     #region function pour problèmes
     public void PanneDeCourant()
     {
-        //effet
+        //effet 
         Instantiate(popUp); //warning pop-up
         panneCourantActive = true;
         //play sound
@@ -152,7 +183,7 @@ private void Awake()
 
     public void Fuite()
     {
-        //effet
+        //effet (il dans le update hihi)
         Instantiate(popUp); //warning pop-up
         fuiteActive = true;
         //play sound
