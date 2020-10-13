@@ -10,11 +10,17 @@ public class EventManager : MonoBehaviour
 {
     public static EventManager instance;
 
+    [Space(10)]
     [Header("Fuite refs")]
     float timer = 0f;
     public float delayAmount;
 
+    [Space]
+    [Header("Panne de Courant refs")]
+    public GameObject darkPanel;
+
     #region Bools
+    [Space(10)]
     [Header("Events bools")]
     public bool panneCourantActive = false;
     public bool panneReacteurActive = false;
@@ -39,7 +45,7 @@ public class EventManager : MonoBehaviour
     #endregion
 
     int funcToChoose;
-    int escudo;
+
 
     [Space(10)]
     [Header("Audio")]
@@ -64,10 +70,6 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-
-    }
 
     private void Update()
     {
@@ -172,7 +174,8 @@ public class EventManager : MonoBehaviour
     #region function pour problèmes
     public void PanneDeCourant()
     {
-        //effet 
+        //on fait apparaitre un voil noir donc en soit il suffit d'activer un SetActive   //effet 
+        darkPanel.SetActive(true);
         Instantiate(popUp); //warning pop-up
         panneCourantActive = true;
         //play sound
