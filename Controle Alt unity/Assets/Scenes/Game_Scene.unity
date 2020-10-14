@@ -644,6 +644,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1255490916, guid: 78c5b9d82a5c3e14480ae1e19de830bc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1282096028, guid: 78c5b9d82a5c3e14480ae1e19de830bc, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -651,6 +655,10 @@ PrefabInstance:
     - target: {fileID: 1282096028, guid: 78c5b9d82a5c3e14480ae1e19de830bc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655315901, guid: 78c5b9d82a5c3e14480ae1e19de830bc, type: 3}
+      propertyPath: m_Value
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4423406923144938192, guid: 78c5b9d82a5c3e14480ae1e19de830bc,
         type: 3}
@@ -1256,6 +1264,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: -45, y: -5, z: -10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1505726260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4423406923960848741, guid: 78c5b9d82a5c3e14480ae1e19de830bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 730203416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1521619021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1720,11 @@ PrefabInstance:
       propertyPath: surchauffePicto
       value: 
       objectReference: {fileID: 2119535532}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: darkPanel
+      value: 
+      objectReference: {fileID: 1505726260}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a547c3f38d30b344d92d70d43c941474, type: 3}
 --- !u!1 &2098483773 stripped
@@ -1816,6 +1835,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017519556218342152, guid: 1cc125672421e6843851a9cebbf68ace,
+        type: 3}
+      propertyPath: maxHeat
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017519556218342152, guid: 1cc125672421e6843851a9cebbf68ace,
+        type: 3}
+      propertyPath: cooldownSpeed
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cc125672421e6843851a9cebbf68ace, type: 3}

@@ -24,7 +24,7 @@ public class shieldBar : MonoBehaviour
         
         if (Input.GetKeyUp(input) && PlayerManager.Instance.shield > 0)
         {
-            PlayerManager.Instance.shield -= 1;
+            PlayerManager.Instance.shield -= 3;
             //StartCoroutine(CheckCD(Shield));
         }
         if (Input.GetKeyUp(input2) && PlayerManager.Instance.shield < PlayerManager.Instance.maxShield)

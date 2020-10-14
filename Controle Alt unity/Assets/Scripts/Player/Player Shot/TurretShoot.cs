@@ -5,6 +5,7 @@ using UnityEngine;
 public class TurretShoot : MonoBehaviour
 {
     public string input;
+    public string fixSurchaufeInput;
     public float fireRate;
     public float cooldownSpeed;
     public int turretIndex;
@@ -13,14 +14,14 @@ public class TurretShoot : MonoBehaviour
 
     public Transform shootPoint;
 
-    private bool canShoot;
+    public bool canShoot;
     private bool stopCoroutine;
     private bool stopCd;
     bool surchauffe;
-    int heat;
+    public int heat;
     public int maxHeat;
-    bool fullyCooled;
-
+    public bool fullyCooled = true;
+    bool coroutineIsRunning;
 
     [Space(10)]
     [Header("Audio")]
@@ -35,16 +36,16 @@ public class TurretShoot : MonoBehaviour
     void Update()
     {
         
-        
 
-        
-        
-        if (heat <= maxHeat  && fullyCooled)
+        if (heat < maxHeat  && fullyCooled)
         {
             if (Input.GetButton(input))
             {
                 canShoot = true;
-
+            }
+            else
+            {
+                canShoot = false;
             }
             if (canShoot == true)
             {
@@ -63,14 +64,21 @@ public class TurretShoot : MonoBehaviour
         }
         else
         {
+            if (Input.GetButtonDown(fixSurchaufeInput))
+            {
+                heat -= 1;
+            }
+            canShoot = false;
+            EventManager.instance.surchauffeActive = true;
             fullyCooled = false;
+            
+            
             if (heat == 0)
             {
                 fullyCooled = true;
+                EventManager.instance.surchauffeActive = false;
             }
-            StartCoroutine(CoolingDown());
-
-            canShoot = false;
+            
             
         }
         
@@ -80,10 +88,13 @@ public class TurretShoot : MonoBehaviour
     {
         if (heat > 0)
         {
-            heat--;
-            stopCd = true;
+            coroutineIsRunning = true;
+            heat -= 1;
+                        stopCd = true;
+
             yield return new WaitForSeconds(cooldownSpeed);
             stopCd = false;
+            coroutineIsRunning = false;
         }
         
     }

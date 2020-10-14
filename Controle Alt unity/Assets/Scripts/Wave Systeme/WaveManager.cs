@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 /// <summary>
@@ -18,6 +19,10 @@ namespace Manager
         #region Variables
 
         public string startButton;
+
+        [Header("temps entre les asteroides")]
+        public float timer;
+        public float timerAdd;
 
         [Header ("Nombre d'ennemis à spawn")]
         public int numberKamikaze;
@@ -139,6 +144,7 @@ namespace Manager
         {
             yield return new WaitForSeconds(timeBtwWave);
 
+            timer -= timerAdd;
             numberOfWave += 1;
             timeBtwEmergency -= EmergencyTimeAdd;
             chanceOfEmergency += EmergencyChanceAdd;
