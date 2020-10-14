@@ -18,11 +18,13 @@ namespace AK
         static const AkUniqueID ALARM_GAZ = 3840799523U;
         static const AkUniqueID ALARM_INTEGRITY = 1462549256U;
         static const AkUniqueID ALARM_SHIELD = 144264076U;
+        static const AkUniqueID BADGUYS_DEATH = 3539764329U;
         static const AkUniqueID ENGINE_START = 2862969430U;
         static const AkUniqueID LASERSHOOT_DOWNLEFT = 3840785261U;
         static const AkUniqueID LASERSHOOT_DOWNRIGHT = 2836862680U;
         static const AkUniqueID LASERSHOOT_UPLEFT = 3256852338U;
         static const AkUniqueID LASERSHOOT_UPRIGHT = 1604459401U;
+        static const AkUniqueID RUN_THEME = 3083031782U;
         static const AkUniqueID SHIELDEXPLOSIONIMPACT_DOWN = 4241304272U;
         static const AkUniqueID SHIELDEXPLOSIONIMPACT_UP = 3762322931U;
         static const AkUniqueID SHIELDIMPACT_DOWN = 2822200171U;
@@ -36,6 +38,13 @@ namespace AK
         static const AkUniqueID TURRETMOVEMENT_UPLEFT = 1850191103U;
         static const AkUniqueID TURRETMOVEMENT_UPRIGHT = 1182029954U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID FX_VOLUME = 3350225276U;
+        static const AkUniqueID GLOBAL_VOLUME = 2115185289U;
+        static const AkUniqueID MUSIC_VOLUME = 1006694123U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

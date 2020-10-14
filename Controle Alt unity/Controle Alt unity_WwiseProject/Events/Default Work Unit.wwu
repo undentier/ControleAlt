@@ -8,6 +8,19 @@
 						<Property Name="Color" Type="int16" Value="11"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
+					<ChildrenList>
+						<Event Name="Run_Theme" ID="{D95B1E96-35B6-4324-9AB4-DA472F0539CB}">
+							<ChildrenList>
+								<Action Name="" ID="{7C698CB8-01D8-4638-BCE8-02D871A14DFB}" ShortID="45478675">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PLACEHOLDER" ID="{CF696EE3-4025-4EA0-81BE-570F38A05313}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambients" ID="{4E2EEDCD-1E5F-408D-A473-AFE3110E83D3}" ShortID="1060379109">
 					<PropertyList>
@@ -60,6 +73,33 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Engine_Boost" ID="{AB1F0F72-9DF4-4EF7-8AFA-52A0D16EEC70}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6EB864E6-B303-4225-A19F-CC9F59F6FF72}" ShortID="485483930">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="13"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PLACEHOLDER_START" ID="{5679D995-345D-49F4-A079-E6B7D183C6C2}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D0AA4429-5612-4FC2-9E55-F0C0434EC836}" ShortID="506301717">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="80.2">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2713BDBB-835E-4E3A-856A-7763CDA196B0}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Run_Theme" ID="{D95B1E96-35B6-4324-9AB4-DA472F0539CB}" WorkUnitID="{201B6F4F-C364-47F9-BE10-063EFC5CB216}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -322,6 +362,19 @@
 						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
+					<ChildrenList>
+						<Event Name="BadGuys_Death" ID="{CA421440-4811-4F57-8767-64F1A6787697}">
+							<ChildrenList>
+								<Action Name="" ID="{22FE1978-936F-4136-96B3-1FE9F3316CED}" ShortID="65943240">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KamikazExplosion_Middle" ID="{8F571657-41BD-493F-80B6-816A36069856}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
 				</Folder>
 			</ChildrenList>
 		</WorkUnit>

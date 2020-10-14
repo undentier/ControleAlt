@@ -26,7 +26,20 @@
 							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="FX_Volume" ID="{3901945E-DE9B-4570-8FA6-018B53514E68}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Global_Volume" ID="{86A0EDE3-052A-4792-934E-6C5FA749C7B5}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{CF1AA087-E7C1-4DFB-86BE-6E6F651DFEB0}"/>
+							<Value>80</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
@@ -69,7 +82,20 @@
 							<Position X="2" Y="2"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="FX_Volume" ID="{3901945E-DE9B-4570-8FA6-018B53514E68}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Global_Volume" ID="{86A0EDE3-052A-4792-934E-6C5FA749C7B5}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{CF1AA087-E7C1-4DFB-86BE-6E6F651DFEB0}"/>
+							<Value>80</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
