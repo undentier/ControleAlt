@@ -19,8 +19,8 @@ public class TurretShoot : MonoBehaviour
     bool surchauffe;
     public int heat;
     public int maxHeat;
-    bool fullyCooled;
-
+    public bool fullyCooled = true;
+    bool coroutineIsRunning;
 
     [Space(10)]
     [Header("Audio")]
@@ -60,12 +60,15 @@ public class TurretShoot : MonoBehaviour
         else
         {
             fullyCooled = false;
+            if (coroutineIsRunning == false)
+            {
+                StartCoroutine(CoolingDown());
+            }
+            
             if (heat == 0)
             {
                 fullyCooled = true;
             }
-            StartCoroutine(CoolingDown());
-
             canShoot = false;
             
         }
@@ -76,10 +79,13 @@ public class TurretShoot : MonoBehaviour
     {
         if (heat > 0)
         {
-            heat--;
+            coroutineIsRunning = true;
+            heat -= 1;
+            Debug.Log("okidoki");
             stopCd = true;
             yield return new WaitForSeconds(cooldownSpeed);
             stopCd = false;
+            coroutineIsRunning = false;
         }
         
     }

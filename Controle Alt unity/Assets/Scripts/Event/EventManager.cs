@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ManagerPlayer;
+using Manager;
 
 
 //pour appeler les fonctions des problèmes il faut juste une ref pour le scrip (EventManager eventManager) et puis dans la fonction Start: eventManager = EventManager.instance; Enfin il y a juste à eventManager.LaFonctionQueTuVeux
@@ -75,7 +76,7 @@ public class EventManager : MonoBehaviour
     {
         Picto();
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (/*Input.GetKeyDown(KeyCode.F)&&*/ WaveManager.Instance.isInEmergency)
         {
             RandomEvent();
         }
