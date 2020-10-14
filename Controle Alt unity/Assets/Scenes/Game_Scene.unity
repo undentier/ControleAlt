@@ -1369,6 +1369,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3824711597986577882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1705063570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4423406923960848741, guid: 78c5b9d82a5c3e14480ae1e19de830bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 730203416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1765225076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,6 +1684,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
         type: 3}
+      propertyPath: darkPanel
+      value: 
+      objectReference: {fileID: 1705063570}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
       propertyPath: panneDeCourantPicto
       value: 
       objectReference: {fileID: 1134281934}
@@ -1706,6 +1717,24 @@ PrefabInstance:
       propertyPath: surchauffePicto
       value: 
       objectReference: {fileID: 2119535532}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: alarmComAudio.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 15b77673cd7c49f49b131d8d790c404c,
+        type: 2}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: alarmGazAudio.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8144f659dc07785459e511f1f1af3a45,
+        type: 2}
+    - target: {fileID: 1906956490575863514, guid: a547c3f38d30b344d92d70d43c941474,
+        type: 3}
+      propertyPath: alarmEngineAudio.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f2e97fdd53e478458d816057ecb337e,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a547c3f38d30b344d92d70d43c941474, type: 3}
 --- !u!1 &2098483773 stripped

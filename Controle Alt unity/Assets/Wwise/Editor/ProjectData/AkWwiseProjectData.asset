@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 24d8305e2ac0564f989c786050abc11d
     GuidInternal: 
-    m_lastTime: -8585995216292544928
+    m_lastTime: -8585989442713620809
     List:
     - name: Main
       guid: 8e2e08e276ba684f9fd562708c741166
@@ -68,8 +68,78 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4f6f1b2064c3f947be10063efc5cb216
     GuidInternal: 
-    m_lastTime: -8585995216292634840
+    m_lastTime: -8585989442714020395
     List:
+    - name: Alarm_Communications
+      guid: 768f8650c9863a4e99ce78e226128199
+      id: 1187211444
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Int
+        ObjectType: 4
+      - ElementName: Alarm_Communications
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Int\Alarm_Communications
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Alarm_Engine
+      guid: fd8598abdf879d409197a501d92e8be8
+      id: 1288870261
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Int
+        ObjectType: 4
+      - ElementName: Alarm_Engine
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Int\Alarm_Engine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Alarm_Gaz
+      guid: f12d8a8f026e7f43ac5e45342ed22908
+      id: 3840799523
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Int
+        ObjectType: 4
+      - ElementName: Alarm_Gaz
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Int\Alarm_Gaz
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Alarm_Integrity
+      guid: 5569d715505934439348fee46fe1308a
+      id: 1462549256
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Int
+        ObjectType: 4
+      - ElementName: Alarm_Integrity
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Int\Alarm_Integrity
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Alarm_Shield
+      guid: f2849f48c327084585af617b519a1c67
+      id: 144264076
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SpaceShip_Int
+        ObjectType: 4
+      - ElementName: Alarm_Shield
+        ObjectType: 3
+      Path: Default Work Unit\SpaceShip_Int\Alarm_Shield
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Ambients
       guid: cded2e4e5f1e8d40a473afe3110e83d3
       id: 4095160042
@@ -91,6 +161,20 @@ MonoBehaviour:
       - ElementName: BadGuys
         ObjectType: 4
       Path: Default Work Unit\BadGuys
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BadGuys_Death
+      guid: 401442ca1148574f876764f1a6787697
+      id: 3539764329
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BadGuys
+        ObjectType: 4
+      - ElementName: BadGuys_Death
+        ObjectType: 3
+      Path: Default Work Unit\BadGuys\BadGuys_Death
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -185,6 +269,20 @@ MonoBehaviour:
       - ElementName: Other
         ObjectType: 4
       Path: Default Work Unit\Other
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Run_Theme
+      guid: 961e5bd9b63524439ab4da472f0539cb
+      id: 3083031782
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      - ElementName: Run_Theme
+        ObjectType: 3
+      Path: Default Work Unit\Musics\Run_Theme
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -388,8 +486,35 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4057619d25198a43a29b031bd6fd4c16
     GuidInternal: 
-    m_lastTime: -8585997007145378708
-    List: []
+    m_lastTime: -8585989442713970444
+    List:
+    - name: FX_Volume
+      guid: 5e9401399bde70458fa6018b53514e68
+      id: 3350225276
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FX_Volume
+        ObjectType: 13
+      Path: Default Work Unit\FX_Volume
+    - name: Global_Volume
+      guid: e3eda0862a059247934e6c5fa749c7b5
+      id: 2115185289
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Global_Volume
+        ObjectType: 13
+      Path: Default Work Unit\Global_Volume
+    - name: Music_Volume
+      guid: 87a01acfc1e7fb4d86be6e6f651dfeb0
+      id: 1006694123
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_Volume
+        ObjectType: 13
+      Path: Default Work Unit\Music_Volume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -408,7 +533,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 14cb1060138b8740b9c3dee5cae90d5a
     GuidInternal: 
-    m_lastTime: -8585997007145009065
+    m_lastTime: -8585990127899842271
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -420,6 +545,10 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585997007144979139
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Controle Alt unity_WwiseProject
+  - /Controle Alt unity_WwiseProject/Events
+  - /Controle Alt unity_WwiseProject/Events/Default Work Unit
+  - /Controle Alt unity_WwiseProject/Events/Default Work Unit/SpaceShip_Int
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
