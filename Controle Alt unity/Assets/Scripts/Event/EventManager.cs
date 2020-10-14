@@ -190,6 +190,7 @@ public class EventManager : MonoBehaviour
         //effet
         Instantiate(popUp); //warning pop-up
         panneReacteurActive = true;
+        Debug.Log("Test");
         alarmEngineAudio.Post(gameObject);
     }
 

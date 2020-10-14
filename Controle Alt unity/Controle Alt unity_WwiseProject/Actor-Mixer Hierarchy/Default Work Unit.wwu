@@ -20,6 +20,12 @@
 						<Sound Name="PLACEHOLDER" ID="{CF696EE3-4025-4EA0-81BE-570F38A05313}" ShortID="429319901">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="Priority" Type="int16">
+									<ValueList>
+										<Value>80</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-8</Value>
@@ -116,7 +122,7 @@
 													</Point>
 													<Point>
 														<XPos>20</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log2</SegmentShape>
 													</Point>
@@ -189,6 +195,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Alarms" ID="{76130D04-C9D5-4399-82FB-0F85F59F7C4C}" ShortID="346208482">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9A3FECE4-28B7-47D7-9E83-410611AE6F3A}"/>
@@ -201,6 +214,11 @@
 								<Sound Name="Alarm_1" ID="{4D10B902-D699-448D-9ACC-D92897C2200B}" ShortID="357480944">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -257,6 +275,11 @@
 								</Sound>
 								<Sound Name="Alarm_3" ID="{65D46DA7-7EF6-4FA0-9F6B-83E5CD7A663C}" ShortID="239794677">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -289,6 +312,11 @@
 								<Sound Name="Alarm_4" ID="{3F119E47-CB9C-48A2-A104-B1872F91343C}" ShortID="191101708">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>2000</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -378,6 +406,11 @@
 								</Sound>
 								<Sound Name="Alarm_7" ID="{68B29636-EE0C-4FD8-8A22-553849721531}" ShortID="279177228">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -409,6 +442,11 @@
 								<Sound Name="Alarm_8" ID="{E840D5AC-9C1C-46F7-ACD0-CB66D342B5C6}" ShortID="846434522">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>500</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -437,6 +475,11 @@
 								</Sound>
 								<Sound Name="Alarm_9" ID="{378902BF-3185-49EB-BD20-A6E01F571868}" ShortID="162459003">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>

@@ -34,11 +34,68 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="Alarm_Engine" ID="{AB9885FD-87DF-409D-9197-A501D92E8BE8}"/>
-						<Event Name="Alarm_Communications" ID="{50868F76-86C9-4E3A-99CE-78E226128199}"/>
-						<Event Name="Alarm_Gaz" ID="{8F8A2DF1-6E02-437F-AC5E-45342ED22908}"/>
-						<Event Name="Alarm_Shield" ID="{489F84F2-27C3-4508-85AF-617B519A1C67}"/>
-						<Event Name="Alarm_Integrity" ID="{15D76955-5950-4334-9348-FEE46FE1308A}"/>
+						<Event Name="Alarm_Engine" ID="{AB9885FD-87DF-409D-9197-A501D92E8BE8}">
+							<ChildrenList>
+								<Action Name="" ID="{91732259-0325-4A06-8118-68BE917E263F}" ShortID="1057413975">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alarm_5" ID="{E6E49F4C-7FAE-4EA5-A4C5-E8C36C73124F}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Alarm_Communications" ID="{50868F76-86C9-4E3A-99CE-78E226128199}">
+							<ChildrenList>
+								<Action Name="" ID="{AD06D4D5-52B6-44A7-86BF-B704D09839D8}" ShortID="1025031311">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alarm_4" ID="{3F119E47-CB9C-48A2-A104-B1872F91343C}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Alarm_Gaz" ID="{8F8A2DF1-6E02-437F-AC5E-45342ED22908}">
+							<ChildrenList>
+								<Action Name="" ID="{57AFB56B-4C9E-4EA1-8D1B-49712BC8511D}" ShortID="302368879">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alarm_8" ID="{E840D5AC-9C1C-46F7-ACD0-CB66D342B5C6}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Alarm_Shield" ID="{489F84F2-27C3-4508-85AF-617B519A1C67}">
+							<ChildrenList>
+								<Action Name="" ID="{AAE600C8-1871-4396-B09B-E65C4D5109B6}" ShortID="444455823">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alarm_2" ID="{F52CC7C6-33EF-46B9-B231-D34A86C36ED7}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Alarm_Integrity" ID="{15D76955-5950-4334-9348-FEE46FE1308A}">
+							<ChildrenList>
+								<Action Name="" ID="{CCB28D91-E885-41AF-9575-FC3F23B3C342}" ShortID="1007899018">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alarm_1" ID="{4D10B902-D699-448D-9ACC-D92897C2200B}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B6576630-162F-4E98-8158-F44907F71E67}" ShortID="1059802046">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alarm_6" ID="{1370F3F0-1F46-49C0-A2FC-F44425B6E232}" WorkUnitID="{D8B90720-C2A9-453B-8637-2020C8318358}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SpaceShip_Ext" ID="{5FC32C63-3AAA-4DE2-9A66-BF4A6C3EAF9A}" ShortID="221301100">
