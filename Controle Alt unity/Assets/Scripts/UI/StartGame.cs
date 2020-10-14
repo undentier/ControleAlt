@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class StartGame : MonoBehaviour
 {
     public Text inputFieldText;
     public Text errorText;
-    
+
+    public TextMeshProUGUI inputFieldTextVEVO;
+    public TextMeshProUGUI errorTextVEVO;
+
+
     private void Start()
     {
         errorText.enabled = false;
