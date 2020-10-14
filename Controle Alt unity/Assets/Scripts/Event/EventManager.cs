@@ -77,7 +77,6 @@ public class EventManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            alarmComAudio.Post(gameObject);
             RandomEvent();
         }
 

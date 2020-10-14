@@ -16,16 +16,55 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3775900230">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1073749706">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1187211444" Name="Alarm_Communications" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Communications" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1288870261" Name="Alarm_Engine" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Engine" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3840799523" Name="Alarm_Gaz" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Gaz" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1462549256" Name="Alarm_Integrity" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Integrity" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="144264076" Name="Alarm_Shield" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Shield" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1187211444" Name="Alarm_Communications" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Communications" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="83717087" Language="SFX">
+							<ShortName>Alarm_4.wav</ShortName>
+							<Path>SFX\Alarm_4_BFE39D26.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1288870261" Name="Alarm_Engine" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Engine" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="578259461" Language="SFX">
+							<ShortName>Alarm_5.wav</ShortName>
+							<Path>SFX\Alarm_5_46545D50.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3840799523" Name="Alarm_Gaz" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Gaz" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="642038927" Language="SFX">
+							<ShortName>Alarm_8.wav</ShortName>
+							<Path>SFX\Alarm_8_453D4282.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1462549256" Name="Alarm_Integrity" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Integrity" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="362360375" Language="SFX">
+							<ShortName>Alarm_1.wav</ShortName>
+							<Path>SFX\Alarm_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1028790693" Language="SFX">
+							<ShortName>Alarm_6.wav</ShortName>
+							<Path>SFX\Alarm_6_0E48CDB7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="144264076" Name="Alarm_Shield" ObjectPath="\Events\Default Work Unit\SpaceShip_Int\Alarm_Shield" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="406979123" Language="SFX">
+							<ShortName>Alarm_2.wav</ShortName>
+							<Path>SFX\Alarm_2_E7C2DB11.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3539764329" Name="BadGuys_Death" ObjectPath="\Events\Default Work Unit\BadGuys\BadGuys_Death" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="3.591480" DurationMax="5.079120">
 					<IncludedMemoryFiles>
 						<File Id="183959692" Language="SFX">
