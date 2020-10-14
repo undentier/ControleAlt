@@ -77,6 +77,7 @@ public class EventManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
+            alarmComAudio.Post(gameObject);
             RandomEvent();
         }
 
@@ -186,6 +187,7 @@ public class EventManager : MonoBehaviour
         //effet
         Instantiate(popUp); //warning pop-up
         panneReacteurActive = true;
+        Debug.Log("Test");
         alarmEngineAudio.Post(gameObject);
     }
 

@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayAmount: 0
+  darkPanel: {fileID: 0}
   panneCourantActive: 0
   panneReacteurActive: 0
   fuiteActive: 0
