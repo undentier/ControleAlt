@@ -46,7 +46,9 @@ public class EventManager : MonoBehaviour
     #endregion
 
     int funcToChoose;
-
+    
+   
+    
 
     [Space(10)]
     [Header("Audio")]
@@ -79,6 +81,7 @@ public class EventManager : MonoBehaviour
         if (/*Input.GetKeyDown(KeyCode.F)&&*/ WaveManager.Instance.isInEmergency)
         {
             RandomEvent();
+            WaveManager.Instance.isInEmergency = false;
         }
 
 

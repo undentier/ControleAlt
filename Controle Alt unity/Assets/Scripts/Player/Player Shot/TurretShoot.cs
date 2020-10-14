@@ -5,6 +5,7 @@ using UnityEngine;
 public class TurretShoot : MonoBehaviour
 {
     public string input;
+    public string fixSurchaufeInput;
     public float fireRate;
     public float cooldownSpeed;
     public int turretIndex;
@@ -13,7 +14,7 @@ public class TurretShoot : MonoBehaviour
 
     public Transform shootPoint;
 
-    private bool canShoot;
+    public bool canShoot;
     private bool stopCoroutine;
     private bool stopCd;
     bool surchauffe;
@@ -34,13 +35,17 @@ public class TurretShoot : MonoBehaviour
     
     void Update()
     {
+        
 
-        if (heat <= maxHeat  && fullyCooled)
+        if (heat < maxHeat  && fullyCooled)
         {
             if (Input.GetButton(input))
             {
                 canShoot = true;
-
+            }
+            else
+            {
+                canShoot = false;
             }
             if (canShoot == true)
             {
@@ -59,17 +64,21 @@ public class TurretShoot : MonoBehaviour
         }
         else
         {
-            fullyCooled = false;
-            if (coroutineIsRunning == false)
+            if (Input.GetButtonDown(fixSurchaufeInput))
             {
-                StartCoroutine(CoolingDown());
+                heat -= 1;
             }
+            canShoot = false;
+            EventManager.instance.surchauffeActive = true;
+            fullyCooled = false;
+            
             
             if (heat == 0)
             {
                 fullyCooled = true;
+                EventManager.instance.surchauffeActive = false;
             }
-            canShoot = false;
+            
             
         }
         
@@ -81,8 +90,8 @@ public class TurretShoot : MonoBehaviour
         {
             coroutineIsRunning = true;
             heat -= 1;
-            Debug.Log("okidoki");
-            stopCd = true;
+                        stopCd = true;
+
             yield return new WaitForSeconds(cooldownSpeed);
             stopCd = false;
             coroutineIsRunning = false;
