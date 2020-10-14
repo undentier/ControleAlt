@@ -17,7 +17,7 @@ public class TurretShoot : MonoBehaviour
     private bool stopCoroutine;
     private bool stopCd;
     bool surchauffe;
-    int heat;
+    public int heat;
     public int maxHeat;
     bool fullyCooled;
 
@@ -34,11 +34,7 @@ public class TurretShoot : MonoBehaviour
     
     void Update()
     {
-        
-        
 
-        
-        
         if (heat <= maxHeat  && fullyCooled)
         {
             if (Input.GetButton(input))

@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReferenceTurret: {fileID: 0}
-  MoveSpeed: 20
+  MoveSpeed: 5
 --- !u!54 &-8837276048536127725
 Rigidbody:
   m_ObjectHideFlags: 0
