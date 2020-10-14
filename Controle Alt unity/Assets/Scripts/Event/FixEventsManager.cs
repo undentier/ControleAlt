@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PlayerMouvement;
 
 public class FixEventsManager : MonoBehaviour
 {
@@ -28,9 +29,12 @@ public class FixEventsManager : MonoBehaviour
     bool reactReady = false;
 
 
+    ShipMouvement shipMovement;
+
     private void Start()
     {
         eventManager = EventManager.instance;
+        shipMovement = ShipMouvement.shipInstance;
     }
 
     private void Update()
@@ -127,8 +131,8 @@ public class FixEventsManager : MonoBehaviour
             {
                 reactReady = false;
                 eventManager.panneReacteurActive = false;
-                //remttre le canMove bool en true (va bien niquer ta mère visual)
-                
+
+                shipMovement.canMoove = true;
             }
         }
     }

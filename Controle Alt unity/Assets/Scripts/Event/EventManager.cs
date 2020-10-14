@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ManagerPlayer;
+using PlayerMouvement;
 
 
 
@@ -10,6 +11,7 @@ using ManagerPlayer;
 public class EventManager : MonoBehaviour
 {
     public static EventManager instance;
+    ShipMouvement shipMovement;
 
     [Space(10)]
     [Header("Fuite refs")]
@@ -56,9 +58,11 @@ public class EventManager : MonoBehaviour
 
 
 
+    private void Start()
+    {
+        shipMovement = ShipMouvement.shipInstance;
+    }
 
-    //private ShipMouvement _playerScript;
-    public GameObject player;
 
     private void Awake()
     {
@@ -76,11 +80,6 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-        //_playerScript = player.GetComponent<ShipMouvement>();
-    }
 
 
     private void Update()
@@ -194,7 +193,7 @@ public class EventManager : MonoBehaviour
 
     public void PanneDeReacteur()
     {
-        //wow incroyable visual vient de me donner un cancer phase terminal fds je veux juste accéder à la bool Canmove du script de guigui crlh
+        shipMovement.canMoove = false;
         Instantiate(popUp); //warning pop-up
         panneReacteurActive = true;
         alarmEngineAudio.Post(gameObject);

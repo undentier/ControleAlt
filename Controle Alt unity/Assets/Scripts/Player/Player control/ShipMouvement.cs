@@ -18,10 +18,20 @@ namespace PlayerMouvement
 
         private Rigidbody shipRb;
         public bool canMoove;
+
+        public static ShipMouvement shipInstance;
         #endregion
 
         void Start()
         {
+            if (shipInstance == null)
+            {
+                shipInstance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
             shipRb = gameObject.GetComponent<Rigidbody>();
         }
 
