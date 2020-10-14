@@ -17,11 +17,21 @@ namespace PlayerMouvement
         public float speed;
 
         private Rigidbody shipRb;
-        bool canMoove;
+        public bool canMoove;
+
+        public static ShipMouvement shipInstance;
         #endregion
 
         void Start()
         {
+            if (shipInstance == null)
+            {
+                shipInstance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
             shipRb = gameObject.GetComponent<Rigidbody>();
         }
 

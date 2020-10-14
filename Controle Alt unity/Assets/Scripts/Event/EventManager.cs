@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ManagerPlayer;
+using PlayerMouvement;
 using Manager;
+
 
 
 //pour appeler les fonctions des problèmes il faut juste une ref pour le scrip (EventManager eventManager) et puis dans la fonction Start: eventManager = EventManager.instance; Enfin il y a juste à eventManager.LaFonctionQueTuVeux
@@ -10,6 +12,7 @@ using Manager;
 public class EventManager : MonoBehaviour
 {
     public static EventManager instance;
+    ShipMouvement shipMovement;
 
     [Space(10)]
     [Header("Fuite refs")]
@@ -57,6 +60,13 @@ public class EventManager : MonoBehaviour
     public AK.Wwise.Event alarmEngineAudio;
 
 
+
+    private void Start()
+    {
+        shipMovement = ShipMouvement.shipInstance;
+    }
+
+
     private void Awake()
     {
         if (instance != null)
@@ -72,6 +82,7 @@ public class EventManager : MonoBehaviour
             DontDestroyOnLoad(this);
         }
     }
+
 
 
     private void Update()
@@ -178,7 +189,6 @@ public class EventManager : MonoBehaviour
     #region function pour problèmes
     public void PanneDeCourant()
     {
-        //on fait apparaitre un voil noir donc en soit il suffit d'activer un SetActive   //effet 
         darkPanel.SetActive(true);
         Instantiate(popUp); //warning pop-up
         panneCourantActive = true;
@@ -187,7 +197,7 @@ public class EventManager : MonoBehaviour
 
     public void PanneDeReacteur()
     {
-        //effet
+        shipMovement.canMoove = false;
         Instantiate(popUp); //warning pop-up
         panneReacteurActive = true;
         Debug.Log("Test");
@@ -236,28 +246,71 @@ public class EventManager : MonoBehaviour
         switch (funcToChoose)
         {
             case 0:
-                PanneDeCourant();
+                if (!panneCourantActive)
+                {
+                    PanneDeCourant();
+                }
+
                 break;
+                
+                
+                
 
             case 1:
-                PanneDeReacteur();
+                if (!panneReacteurActive)
+                {
+                    PanneDeReacteur();
+                }
+
+                
                 break;
+                
+                
 
             case 2:
-                Fuite();
+                if (!fuiteActive)
+                {
+                    Fuite();
+                }
+                
+                
                 break;
+                
+                
+                
 
             case 3:
-                Enrayement();
+                if (!enrayementActive)
+                {
+                    Enrayement();
+                }
+                
                 break;
+                
+                
 
             case 4:
-                SignalVideo();
+                if (!signalVideoActive)
+                {
+                    SignalVideo();
+                }
+               
+                
                 break;
+                
+                
+                
 
             case 5:
-                Surchauffe();
+                if (!surchauffeActive)
+                {
+                    Surchauffe();
+                }
+                
                 break;
+                
+                
+                
         }
     }
 

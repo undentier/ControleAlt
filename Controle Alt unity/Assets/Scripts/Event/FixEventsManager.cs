@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PlayerMouvement;
 
 public class FixEventsManager : MonoBehaviour
 {
@@ -21,10 +22,19 @@ public class FixEventsManager : MonoBehaviour
     bool inputCourant2 = false;
     public GameObject panneCourantPanel;
 
+    [Space(10)]
+    [Header("Panne de réacteur refs")]
+    float reactDownTime, reactUpTime, reactPressTime = 0;
+    float reactCountDown = 3f;
+    bool reactReady = false;
+
+
+    ShipMouvement shipMovement;
 
     private void Start()
     {
         eventManager = EventManager.instance;
+        shipMovement = ShipMouvement.shipInstance;
     }
 
     private void Update()
@@ -105,7 +115,26 @@ public class FixEventsManager : MonoBehaviour
         }
         #endregion
 
-        
+        if (eventManager.panneReacteurActive)
+        {
+            if (Input.GetKeyDown(KeyCode.P) && !reactReady)
+            {
+                reactDownTime = Time.time;
+                reactPressTime = reactDownTime + reactCountDown;
+                reactReady = true;
+            }
+            if (Input.GetKeyUp(KeyCode.P))
+            {
+                reactReady = false;
+            }
+            if (Time.time >= reactPressTime && reactReady == true)
+            {
+                reactReady = false;
+                eventManager.panneReacteurActive = false;
+
+                shipMovement.canMoove = true;
+            }
+        }
     }
 
 
