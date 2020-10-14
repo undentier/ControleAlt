@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class scrollSpaceBG : MonoBehaviour
 {
-    [SerializeField] float scrollSpeed = 0.1f;
+    public float scrollSpeed = 0.1f;
     float xScroll;
 
-    private MeshRenderer meshRenderer;
+    private Rigidbody rb;
 
     private void Awake()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
+        rb = this.GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -21,9 +21,8 @@ public class scrollSpaceBG : MonoBehaviour
 
     private void Scroll()
     {
-        xScroll = Time.time * scrollSpeed;
+        xScroll = Time.deltaTime * scrollSpeed;
 
-        Vector2 offset = new Vector2(xScroll, 0f);
-        meshRenderer.sharedMaterial.SetTextureOffset("_MainTex", offset);
+        rb.AddForce(-xScroll, 0f, 0f);
     }
 }

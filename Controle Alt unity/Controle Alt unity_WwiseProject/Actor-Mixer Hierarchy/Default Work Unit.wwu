@@ -20,6 +20,12 @@
 						<Sound Name="PLACEHOLDER" ID="{CF696EE3-4025-4EA0-81BE-570F38A05313}" ShortID="429319901">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="Priority" Type="int16">
+									<ValueList>
+										<Value>80</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-8</Value>
