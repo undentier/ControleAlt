@@ -6,6 +6,7 @@ public class FixEventsManager : MonoBehaviour
 {
     EventManager eventManager;
 
+    [Header("Fuite refs")]
     bool longInput1 = false;
     bool longInput2 = false;
     float downTimeJ1, upTimeJ1, pressTimeJ1 = 0;
@@ -13,6 +14,12 @@ public class FixEventsManager : MonoBehaviour
     float countDown = 3f;
     bool readyJ1 = false;
     bool readyJ2 = false;
+
+    [Space]
+    [Header("Panne de courant refs")]
+    bool inputCourant1 = false;
+    bool inputCourant2 = false;
+    public GameObject panneCourantPanel;
 
 
     private void Start()
@@ -68,8 +75,33 @@ public class FixEventsManager : MonoBehaviour
             if(longInput1 && longInput2)
             {
                 eventManager.fuiteActive = false;
+                longInput1 = false;
+                longInput2 = false;
                 Debug.Log("g envie de chialer");
             }        
+        }
+        #endregion
+
+        #region Panne de courant Solution
+        if (eventManager.panneCourantActive)
+        {   //J1
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                inputCourant1 = true;
+            }
+            //J2
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                inputCourant2 = true;
+            }
+
+            if(inputCourant1 && inputCourant2)
+            {
+                eventManager.panneCourantActive = false;
+                inputCourant1 = false;
+                inputCourant2 = false;
+                panneCourantPanel.SetActive(false);
+            }
         }
         #endregion
     }
