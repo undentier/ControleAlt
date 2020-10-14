@@ -21,6 +21,12 @@ public class FixEventsManager : MonoBehaviour
     bool inputCourant2 = false;
     public GameObject panneCourantPanel;
 
+    [Space(10)]
+    [Header("Panne de réacteur refs")]
+    float reactDownTime, reactUpTime, reactPressTime = 0;
+    float reactCountDown = 3f;
+    bool reactReady = false;
+
 
     private void Start()
     {
@@ -104,6 +110,27 @@ public class FixEventsManager : MonoBehaviour
             }
         }
         #endregion
+
+        if (eventManager.panneReacteurActive)
+        {
+            if (Input.GetKeyDown(KeyCode.P) && !reactReady)
+            {
+                reactDownTime = Time.time;
+                reactPressTime = reactDownTime + reactCountDown;
+                reactReady = true;
+            }
+            if (Input.GetKeyUp(KeyCode.P))
+            {
+                reactReady = false;
+            }
+            if (Time.time >= reactPressTime && reactReady == true)
+            {
+                reactReady = false;
+                eventManager.panneReacteurActive = false;
+                //remttre le canMove bool en true (va bien niquer ta mère visual)
+                
+            }
+        }
     }
 
 

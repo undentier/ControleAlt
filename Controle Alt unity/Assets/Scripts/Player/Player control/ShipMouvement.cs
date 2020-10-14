@@ -17,7 +17,7 @@ namespace PlayerMouvement
         public float speed;
 
         private Rigidbody shipRb;
-        bool canMoove;
+        public bool canMoove;
         #endregion
 
         void Start()
